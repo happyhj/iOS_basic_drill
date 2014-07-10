@@ -17,10 +17,16 @@ int main(int argc, const char * argv[])
         [FileMatcher displayAllFilesAtPath:path];
         [FileMatcher displayAllFilesAtPath:path withExtension:@"jpg"];
         
-        if([FileMatcher isExistFilename:@"happy.png" atPath:path]){
-            NSLog(@"Exist!");
+        if([FileMatcher isExistFilename:@"happy.jpg" atPath:path]){
+            NSLog(@"Exists!");
         } else {
-            NSLog(@"Not Exist...");
+            NSLog(@"Not Exists...");
+        }
+        NSArray *fileNames = [[NSArray alloc] initWithObjects:@"happy.jpg",@"123", nil];
+        if([FileMatcher isExistFilenames:fileNames atPath:path]){
+            NSLog(@"All Exists!");
+        } else {
+            NSLog(@"Not All Exists...");
         }
     }
     return 0;

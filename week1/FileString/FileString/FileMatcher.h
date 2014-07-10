@@ -15,5 +15,6 @@
 +(void)displayAllFilesAtPath:(NSString*)path;
 +(void)displayAllFilesAtPath:(NSString*)path withExtension:(NSString*)extension;
 +(bool)isExistFilename:(NSString*)filename atPath:(NSString*)path;
++(bool)isExistFilenames:(NSArray*)filenames atPath:(NSString*)path;
 
 @end

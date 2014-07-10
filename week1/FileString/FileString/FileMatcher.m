@@ -48,8 +48,7 @@
         [theURL getResourceValue:&isDirectory forKey:NSURLIsDirectoryKey error:NULL];
         
         // Ignore files under the _extras directory
-        if (([fileName caseInsensitiveCompare:@"_extras"]==NSOrderedSame) &&
-            ([isDirectory boolValue]==YES))
+        if (([fileName caseInsensitiveCompare:@"_extras"]==NSOrderedSame) && ([isDirectory boolValue]==YES))
         {
             [dirEnumerator skipDescendants];
         }
@@ -80,6 +79,7 @@
     theArray = [FileMatcher allFilesAtPath:path];
     NSLog(@"items at %@\n- %@", path, theArray);
 }
+
 +(void)displayAllFilesAtPath:(NSString*)path withExtension:(NSString*)extension
 {
     NSArray *theArray=[NSArray array];
@@ -93,5 +93,15 @@
     NSString *fullPath = [NSString stringWithFormat:@"%@/%@", path, filename];
     return [localFileManager fileExistsAtPath:fullPath];
 }
-
++(bool)isExistFilenames:(NSArray*)filenames atPath:(NSString*)path
+{
+    NSFileManager *localFileManager=[[NSFileManager alloc] init];
+    for (NSString *filename in filenames) {
+        NSString *fullPath = [NSString stringWithFormat:@"%@/%@", path, filename];
+        if(![localFileManager fileExistsAtPath:fullPath]){
+            return NO;
+        };
+    }
+    return YES;
+}
 @end
