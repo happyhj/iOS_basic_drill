@@ -10,6 +10,7 @@
 		B6014857196E672400A40C43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6014856196E672400A40C43 /* Foundation.framework */; };
 		B601485A196E672400A40C43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6014859196E672400A40C43 /* main.m */; };
 		B601485E196E672400A40C43 /* FileString.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B601485D196E672400A40C43 /* FileString.1 */; };
+		B6014866196E769800A40C43 /* FileMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B6014865196E769800A40C43 /* FileMatcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		B6014859196E672400A40C43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B601485C196E672400A40C43 /* FileString-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileString-Prefix.pch"; sourceTree = "<group>"; };
 		B601485D196E672400A40C43 /* FileString.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FileString.1; sourceTree = "<group>"; };
+		B6014864196E769800A40C43 /* FileMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileMatcher.h; sourceTree = "<group>"; };
+		B6014865196E769800A40C43 /* FileMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileMatcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				B6014859196E672400A40C43 /* main.m */,
+				B6014864196E769800A40C43 /* FileMatcher.h */,
+				B6014865196E769800A40C43 /* FileMatcher.m */,
 				B601485D196E672400A40C43 /* FileString.1 */,
 				B601485B196E672400A40C43 /* Supporting Files */,
 			);
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6014866196E769800A40C43 /* FileMatcher.m in Sources */,
 				B601485A196E672400A40C43 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

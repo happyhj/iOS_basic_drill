@@ -7,15 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FileMatcher.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+        NSString *path = @"/Volumes/DATA/Users/heejae/Desktop/test";
+        [FileMatcher displayAllFilesAtPath:path];
+        [FileMatcher displayAllFilesAtPath:path withExtension:@"jpg"];
         
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
+        if([FileMatcher isExistFilename:@"happy.png" atPath:path]){
+            NSLog(@"Exist!");
+        } else {
+            NSLog(@"Not Exist...");
+        }
     }
     return 0;
 }
