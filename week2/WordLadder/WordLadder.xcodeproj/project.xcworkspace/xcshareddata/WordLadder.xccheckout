@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F67C5D83-C835-4080-930D-A370EB4BD998</string>
+	<string>98D8B963-3BDA-4766-8D36-AE943C95E8EA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>JSON_Serialization</string>
+	<string>WordLadder</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>1323BFD6-42AF-4790-84BA-4BFFA0DB078F</key>
 		<string>https://github.com/happyhj/iOS_basic_drill.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>week2/JSON_Serialization/JSON_Serialization.xcodeproj/project.xcworkspace</string>
+	<string>week2/WordLadder/WordLadder.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>1323BFD6-42AF-4790-84BA-4BFFA0DB078F</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>1323BFD6-42AF-4790-84BA-4BFFA0DB078F</string>
 			<key>IDESourceControlWCCName</key>
-			<string>JSON_Serialization</string>
+			<string>FileString</string>
 		</dict>
 	</array>
 </dict>
