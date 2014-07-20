@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>98D8B963-3BDA-4766-8D36-AE943C95E8EA</string>
+	<string>FF47B6F9-138C-4C90-BC2A-389EC1280F74</string>
 	<key>IDESourceControlProjectName</key>
 	<string>WordLadder</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>1323BFD6-42AF-4790-84BA-4BFFA0DB078F</string>
 			<key>IDESourceControlWCCName</key>
-			<string>FileString</string>
+			<string>WordLadder</string>
 		</dict>
 	</array>
 </dict>

@@ -10,6 +10,9 @@
 		B640B92D197BD88400ED8DE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B640B92C197BD88400ED8DE7 /* Foundation.framework */; };
 		B640B930197BD88400ED8DE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B640B92F197BD88400ED8DE7 /* main.m */; };
 		B640B934197BD88400ED8DE7 /* WordLadder.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B640B933197BD88400ED8DE7 /* WordLadder.1 */; };
+		B640B93C197C0F6400ED8DE7 /* WordLadder.m in Sources */ = {isa = PBXBuildFile; fileRef = B640B93B197C0F6400ED8DE7 /* WordLadder.m */; };
+		B640B93F197C100900ED8DE7 /* NSString+WordLadder.m in Sources */ = {isa = PBXBuildFile; fileRef = B640B93E197C100900ED8DE7 /* NSString+WordLadder.m */; };
+		B640B942197C3FE000ED8DE7 /* WLSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = B640B941197C3FE000ED8DE7 /* WLSnapshot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,12 @@
 		B640B92F197BD88400ED8DE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B640B932197BD88400ED8DE7 /* WordLadder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordLadder-Prefix.pch"; sourceTree = "<group>"; };
 		B640B933197BD88400ED8DE7 /* WordLadder.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = WordLadder.1; sourceTree = "<group>"; };
+		B640B93A197C0F6400ED8DE7 /* WordLadder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordLadder.h; sourceTree = "<group>"; };
+		B640B93B197C0F6400ED8DE7 /* WordLadder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordLadder.m; sourceTree = "<group>"; };
+		B640B93D197C100900ED8DE7 /* NSString+WordLadder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WordLadder.h"; sourceTree = "<group>"; };
+		B640B93E197C100900ED8DE7 /* NSString+WordLadder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WordLadder.m"; sourceTree = "<group>"; };
+		B640B940197C3FE000ED8DE7 /* WLSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSnapshot.h; sourceTree = "<group>"; };
+		B640B941197C3FE000ED8DE7 /* WLSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSnapshot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,12 @@
 			isa = PBXGroup;
 			children = (
 				B640B92F197BD88400ED8DE7 /* main.m */,
+				B640B93A197C0F6400ED8DE7 /* WordLadder.h */,
+				B640B93B197C0F6400ED8DE7 /* WordLadder.m */,
+				B640B940197C3FE000ED8DE7 /* WLSnapshot.h */,
+				B640B941197C3FE000ED8DE7 /* WLSnapshot.m */,
+				B640B93D197C100900ED8DE7 /* NSString+WordLadder.h */,
+				B640B93E197C100900ED8DE7 /* NSString+WordLadder.m */,
 				B640B933197BD88400ED8DE7 /* WordLadder.1 */,
 				B640B931197BD88400ED8DE7 /* Supporting Files */,
 			);
@@ -140,6 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B640B930197BD88400ED8DE7 /* main.m in Sources */,
+				B640B93F197C100900ED8DE7 /* NSString+WordLadder.m in Sources */,
+				B640B942197C3FE000ED8DE7 /* WLSnapshot.m in Sources */,
+				B640B93C197C0F6400ED8DE7 /* WordLadder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +271,7 @@
 				B640B939197BD88400ED8DE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
