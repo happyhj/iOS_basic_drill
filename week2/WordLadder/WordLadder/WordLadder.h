@@ -15,5 +15,4 @@
     int step;
 }
 - (int) getLadderLengthStartsWith:(NSString*)start endsWith:(NSString*)end within:(NSSet*)dict;
-- (void) oneStepForward;
 @end

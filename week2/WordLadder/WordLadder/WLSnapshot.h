@@ -33,4 +33,7 @@
 
 
 - (NSMutableArray*) oneStepForward;
+- (bool) isOver;
+- (int) getLadderLength;
+
 @end

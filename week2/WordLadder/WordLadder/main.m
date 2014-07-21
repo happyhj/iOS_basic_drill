@@ -13,14 +13,11 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
- /*
+ 
         NSSet* dict = [[NSSet alloc] initWithObjects:@"hot",@"dot",@"dog",@"lot",@"log", nil];
         NSString* start = @"hit";
         NSString* end = @"cog";
-  */
-        NSSet* dict = [[NSSet alloc] initWithObjects:@"dko",@"gio",@"htt",nil];
-        NSString* start = @"hit";
-        NSString* end = @"hoo";
+
         int ladderLength = [[[WordLadder alloc] init] getLadderLengthStartsWith:start endsWith:end within:dict];
         
         NSLog(@"%d", ladderLength);
