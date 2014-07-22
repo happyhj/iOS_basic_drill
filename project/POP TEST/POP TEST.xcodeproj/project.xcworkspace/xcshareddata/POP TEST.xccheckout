@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>1F54F776-7B62-4299-BEDD-C0F977E10B6A</string>
+	<string>1550D057-1BBF-4FC4-9876-EC9432652148</string>
 	<key>IDESourceControlProjectName</key>
 	<string>POP TEST</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1323BFD6-42AF-4790-84BA-4BFFA0DB078F</key>
+		<key>69826FEF-CD6B-44FD-B9F7-2D38EFEFBEC1</key>
 		<string>https://github.com/happyhj/iOS_basic_drill.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>project/POP TEST/POP TEST.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1323BFD6-42AF-4790-84BA-4BFFA0DB078F</key>
+		<key>69826FEF-CD6B-44FD-B9F7-2D38EFEFBEC1</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,16 +25,16 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1323BFD6-42AF-4790-84BA-4BFFA0DB078F</string>
+	<string>69826FEF-CD6B-44FD-B9F7-2D38EFEFBEC1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1323BFD6-42AF-4790-84BA-4BFFA0DB078F</string>
+			<string>69826FEF-CD6B-44FD-B9F7-2D38EFEFBEC1</string>
 			<key>IDESourceControlWCCName</key>
-			<string>WordLadder</string>
+			<string>iOS_basic_drill</string>
 		</dict>
 	</array>
 </dict>
