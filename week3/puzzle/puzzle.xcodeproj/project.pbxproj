@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B617C77A1980DB48001745C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B617C7791980DB48001745C0 /* Foundation.framework */; };
-		B617C77D1980DB48001745C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B617C77C1980DB48001745C0 /* main.m */; };
+		B617C77D1980DB48001745C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B617C77C1980DB48001745C0 /* main.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B617C7811980DB48001745C0 /* puzzle.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B617C7801980DB48001745C0 /* puzzle.1 */; };
+		B617C7891980DC9B001745C0 /* PuzzleBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = B617C7881980DC9B001745C0 /* PuzzleBoard.m */; };
+		B617C78C1980EBB8001745C0 /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = B617C78B1980EBB8001745C0 /* NSMutableArray+Shuffle.m */; };
+		B617C78F1980EE71001745C0 /* NSString+Input.m in Sources */ = {isa = PBXBuildFile; fileRef = B617C78E1980EE71001745C0 /* NSString+Input.m */; };
+		B649968D19813E1A0000C227 /* NSString+Command.m in Sources */ = {isa = PBXBuildFile; fileRef = B649968C19813E1A0000C227 /* NSString+Command.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +35,14 @@
 		B617C77C1980DB48001745C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B617C77F1980DB48001745C0 /* puzzle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "puzzle-Prefix.pch"; sourceTree = "<group>"; };
 		B617C7801980DB48001745C0 /* puzzle.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = puzzle.1; sourceTree = "<group>"; };
+		B617C7871980DC9B001745C0 /* PuzzleBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PuzzleBoard.h; sourceTree = "<group>"; };
+		B617C7881980DC9B001745C0 /* PuzzleBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PuzzleBoard.m; sourceTree = "<group>"; };
+		B617C78A1980EBB8001745C0 /* NSMutableArray+Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffle.h"; sourceTree = "<group>"; };
+		B617C78B1980EBB8001745C0 /* NSMutableArray+Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffle.m"; sourceTree = "<group>"; };
+		B617C78D1980EE71001745C0 /* NSString+Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Input.h"; sourceTree = "<group>"; };
+		B617C78E1980EE71001745C0 /* NSString+Input.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Input.m"; sourceTree = "<group>"; };
+		B649968B19813E1A0000C227 /* NSString+Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Command.h"; sourceTree = "<group>"; };
+		B649968C19813E1A0000C227 /* NSString+Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Command.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,14 @@
 			isa = PBXGroup;
 			children = (
 				B617C77C1980DB48001745C0 /* main.m */,
+				B617C78A1980EBB8001745C0 /* NSMutableArray+Shuffle.h */,
+				B617C78B1980EBB8001745C0 /* NSMutableArray+Shuffle.m */,
+				B617C7871980DC9B001745C0 /* PuzzleBoard.h */,
+				B617C7881980DC9B001745C0 /* PuzzleBoard.m */,
+				B649968B19813E1A0000C227 /* NSString+Command.h */,
+				B649968C19813E1A0000C227 /* NSString+Command.m */,
+				B617C78D1980EE71001745C0 /* NSString+Input.h */,
+				B617C78E1980EE71001745C0 /* NSString+Input.m */,
 				B617C7801980DB48001745C0 /* puzzle.1 */,
 				B617C77E1980DB48001745C0 /* Supporting Files */,
 			);
@@ -139,7 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B617C7891980DC9B001745C0 /* PuzzleBoard.m in Sources */,
+				B649968D19813E1A0000C227 /* NSString+Command.m in Sources */,
 				B617C77D1980DB48001745C0 /* main.m in Sources */,
+				B617C78F1980EE71001745C0 /* NSString+Input.m in Sources */,
+				B617C78C1980EBB8001745C0 /* NSMutableArray+Shuffle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +177,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -191,7 +215,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -253,6 +277,7 @@
 				B617C7861980DB48001745C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
