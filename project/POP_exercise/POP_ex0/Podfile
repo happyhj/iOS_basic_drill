@@ -1,0 +1,11 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, “7.0”
+
+target "POP_ex0" do
+pod 'pop', '~> 1.0'
+end
+
+target "POP_ex0Tests" do
+pod 'pop', '~> 1.0'
+end
+
