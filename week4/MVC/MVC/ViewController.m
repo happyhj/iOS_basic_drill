@@ -26,4 +26,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onClickButton:(id)sender {
+    [[UIApplication sharedApplication]
+     openURL:[NSURL URLWithString:@"http://clien.net"]];
+}
+
+- (IBAction)onClickColorButton:(id)sender {
+    [self.view setBackgroundColor:
+     [UIColor yellowColor]];
+}
+
 @end
