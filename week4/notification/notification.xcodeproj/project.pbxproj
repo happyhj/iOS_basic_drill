@@ -22,6 +22,11 @@
 		B682B374198A14A10052E9DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B682B353198A14A10052E9DE /* UIKit.framework */; };
 		B682B37C198A14A10052E9DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B682B37A198A14A10052E9DE /* InfoPlist.strings */; };
 		B682B37E198A14A10052E9DE /* notificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B682B37D198A14A10052E9DE /* notificationTests.m */; };
+		B682B389198A14D10052E9DE /* RockScissorPaper.m in Sources */ = {isa = PBXBuildFile; fileRef = B682B388198A14D10052E9DE /* RockScissorPaper.m */; };
+		B682B38D198A1C720052E9DE /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = B682B38A198A1C720052E9DE /* scissors.png */; };
+		B682B38E198A1C720052E9DE /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = B682B38B198A1C720052E9DE /* paper.png */; };
+		B682B38F198A1C720052E9DE /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = B682B38C198A1C720052E9DE /* rock.png */; };
+		B682B391198A1D870052E9DE /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = B682B390198A1D870052E9DE /* start.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,12 @@
 		B682B379198A14A10052E9DE /* notificationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "notificationTests-Info.plist"; sourceTree = "<group>"; };
 		B682B37B198A14A10052E9DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B682B37D198A14A10052E9DE /* notificationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = notificationTests.m; sourceTree = "<group>"; };
+		B682B387198A14D10052E9DE /* RockScissorPaper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RockScissorPaper.h; sourceTree = "<group>"; };
+		B682B388198A14D10052E9DE /* RockScissorPaper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RockScissorPaper.m; sourceTree = "<group>"; };
+		B682B38A198A1C720052E9DE /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.png; sourceTree = "<group>"; };
+		B682B38B198A1C720052E9DE /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		B682B38C198A1C720052E9DE /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
+		B682B390198A1D870052E9DE /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				B682B35E198A14A10052E9DE /* AppDelegate.h */,
+				B682B387198A14D10052E9DE /* RockScissorPaper.h */,
+				B682B388198A14D10052E9DE /* RockScissorPaper.m */,
 				B682B35F198A14A10052E9DE /* AppDelegate.m */,
 				B682B361198A14A10052E9DE /* Main_iPhone.storyboard */,
 				B682B364198A14A10052E9DE /* Main_iPad.storyboard */,
@@ -129,6 +142,10 @@
 		B682B356198A14A10052E9DE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B682B390198A1D870052E9DE /* start.png */,
+				B682B38A198A1C720052E9DE /* scissors.png */,
+				B682B38B198A1C720052E9DE /* paper.png */,
+				B682B38C198A1C720052E9DE /* rock.png */,
 				B682B357198A14A10052E9DE /* notification-Info.plist */,
 				B682B358198A14A10052E9DE /* InfoPlist.strings */,
 				B682B35B198A14A10052E9DE /* main.m */,
@@ -233,7 +250,11 @@
 			files = (
 				B682B366198A14A10052E9DE /* Main_iPad.storyboard in Resources */,
 				B682B36B198A14A10052E9DE /* Images.xcassets in Resources */,
+				B682B391198A1D870052E9DE /* start.png in Resources */,
+				B682B38E198A1C720052E9DE /* paper.png in Resources */,
+				B682B38F198A1C720052E9DE /* rock.png in Resources */,
 				B682B363198A14A10052E9DE /* Main_iPhone.storyboard in Resources */,
+				B682B38D198A1C720052E9DE /* scissors.png in Resources */,
 				B682B35A198A14A10052E9DE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +276,7 @@
 			files = (
 				B682B369198A14A10052E9DE /* ViewController.m in Sources */,
 				B682B360198A14A10052E9DE /* AppDelegate.m in Sources */,
+				B682B389198A14D10052E9DE /* RockScissorPaper.m in Sources */,
 				B682B35C198A14A10052E9DE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
