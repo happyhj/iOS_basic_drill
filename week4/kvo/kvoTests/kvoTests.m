@@ -1,18 +1,18 @@
 //
-//  kvoTests.m
-//  kvoTests
+//  notificationTests.m
+//  notificationTests
 //
 //  Created by KIM HEE JAE on 7/31/14.
 //  Copyright (c) 2014 ___NHNNEXT___. All rights reserved.
 //
-
+/*
 #import <XCTest/XCTest.h>
 
-@interface kvoTests : XCTestCase
+@interface notificationTests : XCTestCase
 
 @end
 
-@implementation kvoTests
+@implementation notificationTests
 
 - (void)setUp
 {
@@ -32,3 +32,4 @@
 }
 
 @end
+*/

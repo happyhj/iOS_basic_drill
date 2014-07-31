@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>kvo.xcscheme</key>
+		<key>notification.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>B6E5C6E0198A261400C19A80</key>
+		<key>B682B34B198A14A10052E9DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B6E5C704198A261400C19A80</key>
+		<key>B682B36F198A14A10052E9DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

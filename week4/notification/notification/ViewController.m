@@ -76,8 +76,8 @@
         NSLog(@"%@", [notification.userInfo objectForKey:@"handString"]);
         NSLog(@"%@", handPicResource);
         
-        UIImage *HandImage = [UIImage imageNamed: handPicResource];
-        [_myHand setImage:HandImage];
+        UIImage *handImage = [UIImage imageNamed: handPicResource];
+        [_myHand setImage:handImage];
     }
 }
 
