@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface RockScissorPaper : NSObject
+{
+    NSDictionary *status;
+}
 - (void)randomize;
+- (void)loadStatus;
+- (void)saveStatus;
 @end

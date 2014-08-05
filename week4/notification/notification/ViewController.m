@@ -17,24 +17,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-
-    // Add this instance of TestClass as an observer of the TestNotification.
-    // We tell the notification center to inform us of "TestNotification"
-    // notifications using the receiveTestNotification: selector. By
-    // specifying object:nil, we tell the notification center that we are not
-    // interested in who posted the notification. If you provided an actual
-    // object rather than nil, the notification center will only notify you
-    // when the notification was posted by that particular object.
     
     [[NSNotificationCenter defaultCenter] addObserver:self // 알림을
                                              selector:@selector(receiveNotification:) // 알림을 받으면 실행할 메소드
-                                                 name:@"rockScissorPaperNotification" // 알림의 이름
+                                                 name:nil // 알림의 이름
                                                object:nil]; // 어디에서 알림을 발행했는지 쳐다보고 싶은 대상. 누가발행했든 상관없이 알고 싶으면 nil
+    
     
     // 첫 이미지 세팅
     UIImage *image = [UIImage imageNamed: @"start.png"];
     [_myHand setImage:image];
+    
     
     // 모델 인스턴스 만들기
     rockScissorPaper = [[RockScissorPaper alloc] init];
@@ -70,17 +63,21 @@
     // as well.
     
     if ([[notification name] isEqualToString:@"rockScissorPaperNotification"]) {
-        NSLog (@"Successfully received the 묵찌빠 notification!");
+        NSLog (@"rockScissorPaperNotification notification received!");
         NSMutableString *handPicResource = [[notification.userInfo objectForKey:@"handString"] mutableCopy];
         [handPicResource  appendString:@".png"];
-        NSLog(@"%@", [notification.userInfo objectForKey:@"handString"]);
-        NSLog(@"%@", handPicResource);
-        
         UIImage *handImage = [UIImage imageNamed: handPicResource];
         [_myHand setImage:handImage];
     }
+    else if ([[notification name] isEqualToString:@"needToSave"]) {
+        NSLog(@"저장할 필요가 있다");
+        [rockScissorPaper saveStatus];
+    }
+    else if ([[notification name] isEqualToString:@"needToLoad"]) {
+        NSLog(@"로드할 필요가 있다");
+        [rockScissorPaper loadStatus];
+    }
 }
-
 
 
 @end

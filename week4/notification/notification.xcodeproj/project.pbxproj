@@ -40,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B63C50221990B37100B3AB13 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
+		B63C50231990B37100B3AB13 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main_iPad.strings; sourceTree = "<group>"; };
+		B63C50241990B37100B3AB13 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B63C50251990B37100B3AB13 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B682B34C198A14A10052E9DE /* notification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B682B34F198A14A10052E9DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B682B351198A14A10052E9DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,9 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				B682B35E198A14A10052E9DE /* AppDelegate.h */,
+				B682B35F198A14A10052E9DE /* AppDelegate.m */,
 				B682B387198A14D10052E9DE /* RockScissorPaper.h */,
 				B682B388198A14D10052E9DE /* RockScissorPaper.m */,
-				B682B35F198A14A10052E9DE /* AppDelegate.m */,
 				B682B361198A14A10052E9DE /* Main_iPhone.storyboard */,
 				B682B364198A14A10052E9DE /* Main_iPad.storyboard */,
 				B682B367198A14A10052E9DE /* ViewController.h */,
@@ -231,6 +235,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = B682B343198A14A00052E9DE;
 			productRefGroup = B682B34D198A14A10052E9DE /* Products */;
@@ -304,6 +309,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B682B359198A14A10052E9DE /* en */,
+				B63C50241990B37100B3AB13 /* ko */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B682B362198A14A10052E9DE /* Base */,
+				B63C50221990B37100B3AB13 /* ko */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -320,6 +327,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B682B365198A14A10052E9DE /* Base */,
+				B63C50231990B37100B3AB13 /* ko */,
 			);
 			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
@@ -328,6 +336,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B682B37B198A14A10052E9DE /* en */,
+				B63C50251990B37100B3AB13 /* ko */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -492,6 +501,7 @@
 				B682B383198A14A10052E9DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B682B384198A14A10052E9DE /* Build configuration list for PBXNativeTarget "notificationTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +510,7 @@
 				B682B386198A14A10052E9DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

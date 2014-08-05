@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  notification
+//  Carousel
 //
-//  Created by KIM HEE JAE on 7/31/14.
+//  Created by KIM HEE JAE on 8/5/14.
 //  Copyright (c) 2014 ___NHNNEXT___. All rights reserved.
 //
 
@@ -13,51 +13,34 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    // 노티피케이션 센터 등록
-   //NSLog(@"didFinishLaunching");
-     return YES;
+    return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-   // NSLog(@"Will Resign Active");
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    NSLog(@"Going Background");
-    // 여기서 저장
-    [[NSNotificationCenter defaultCenter]
-     postNotificationName:@"needToSave"
-     object:self
-     userInfo:nil];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-    //NSLog(@"Going Foreground");
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    NSLog(@"Did Become Active");
-    // 여기서 로드
-    [[NSNotificationCenter defaultCenter]
-     postNotificationName:@"needToLoad"
-     object:self
-     userInfo:nil];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    //NSLog(@"Will Terminate");
 }
 
 @end
