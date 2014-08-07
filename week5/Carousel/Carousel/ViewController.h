@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iCarousel.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <iCarouselDataSource, iCarouselDelegate>
+@property (strong, nonatomic) NSMutableArray *animals;
+@property (strong, nonatomic) NSMutableArray *descriptions;
+
+@property (nonatomic) BOOL wrap;
+
+@property (weak, nonatomic) IBOutlet UIView *aCarousel;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end

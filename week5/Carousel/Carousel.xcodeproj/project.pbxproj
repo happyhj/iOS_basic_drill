@@ -22,6 +22,15 @@
 		B630E55B1990BDF300CBFB8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B630E53A1990BDF300CBFB8C /* UIKit.framework */; };
 		B630E5631990BDF300CBFB8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B630E5611990BDF300CBFB8C /* InfoPlist.strings */; };
 		B630E5651990BDF300CBFB8C /* CarouselTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B630E5641990BDF300CBFB8C /* CarouselTests.m */; };
+		B630E5711990BE1D00CBFB8C /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B630E5701990BE1D00CBFB8C /* iCarousel.m */; };
+		B630E5731990BE4500CBFB8C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B630E5721990BE4500CBFB8C /* QuartzCore.framework */; };
+		B630E57C1990BF7200CBFB8C /* Bear.png in Resources */ = {isa = PBXBuildFile; fileRef = B630E5751990BF7200CBFB8C /* Bear.png */; };
+		B630E57D1990BF7200CBFB8C /* Birds.png in Resources */ = {isa = PBXBuildFile; fileRef = B630E5761990BF7200CBFB8C /* Birds.png */; };
+		B630E57E1990BF7200CBFB8C /* Chimp.png in Resources */ = {isa = PBXBuildFile; fileRef = B630E5771990BF7200CBFB8C /* Chimp.png */; };
+		B630E57F1990BF7200CBFB8C /* Giraffe.png in Resources */ = {isa = PBXBuildFile; fileRef = B630E5781990BF7200CBFB8C /* Giraffe.png */; };
+		B630E5801990BF7200CBFB8C /* Goat.png in Resources */ = {isa = PBXBuildFile; fileRef = B630E5791990BF7200CBFB8C /* Goat.png */; };
+		B630E5811990BF7200CBFB8C /* Tiger.png in Resources */ = {isa = PBXBuildFile; fileRef = B630E57A1990BF7200CBFB8C /* Tiger.png */; };
+		B630E5821990BF7200CBFB8C /* Zebra.png in Resources */ = {isa = PBXBuildFile; fileRef = B630E57B1990BF7200CBFB8C /* Zebra.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +64,16 @@
 		B630E5601990BDF300CBFB8C /* CarouselTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarouselTests-Info.plist"; sourceTree = "<group>"; };
 		B630E5621990BDF300CBFB8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B630E5641990BDF300CBFB8C /* CarouselTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarouselTests.m; sourceTree = "<group>"; };
+		B630E56F1990BE1D00CBFB8C /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		B630E5701990BE1D00CBFB8C /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		B630E5721990BE4500CBFB8C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B630E5751990BF7200CBFB8C /* Bear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bear.png; sourceTree = "<group>"; };
+		B630E5761990BF7200CBFB8C /* Birds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Birds.png; sourceTree = "<group>"; };
+		B630E5771990BF7200CBFB8C /* Chimp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chimp.png; sourceTree = "<group>"; };
+		B630E5781990BF7200CBFB8C /* Giraffe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Giraffe.png; sourceTree = "<group>"; };
+		B630E5791990BF7200CBFB8C /* Goat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Goat.png; sourceTree = "<group>"; };
+		B630E57A1990BF7200CBFB8C /* Tiger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tiger.png; sourceTree = "<group>"; };
+		B630E57B1990BF7200CBFB8C /* Zebra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zebra.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B630E5731990BE4500CBFB8C /* QuartzCore.framework in Frameworks */,
 				B630E5391990BDF300CBFB8C /* CoreGraphics.framework in Frameworks */,
 				B630E53B1990BDF300CBFB8C /* UIKit.framework in Frameworks */,
 				B630E5371990BDF300CBFB8C /* Foundation.framework in Frameworks */,
@@ -84,6 +104,8 @@
 		B630E52A1990BDF300CBFB8C = {
 			isa = PBXGroup;
 			children = (
+				B630E5741990BF7200CBFB8C /* Animals */,
+				B630E56E1990BE1D00CBFB8C /* iCarousel */,
 				B630E53C1990BDF300CBFB8C /* Carousel */,
 				B630E55E1990BDF300CBFB8C /* CarouselTests */,
 				B630E5351990BDF300CBFB8C /* Frameworks */,
@@ -103,6 +125,7 @@
 		B630E5351990BDF300CBFB8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B630E5721990BE4500CBFB8C /* QuartzCore.framework */,
 				B630E5361990BDF300CBFB8C /* Foundation.framework */,
 				B630E5381990BDF300CBFB8C /* CoreGraphics.framework */,
 				B630E53A1990BDF300CBFB8C /* UIKit.framework */,
@@ -153,6 +176,29 @@
 				B630E5611990BDF300CBFB8C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B630E56E1990BE1D00CBFB8C /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				B630E56F1990BE1D00CBFB8C /* iCarousel.h */,
+				B630E5701990BE1D00CBFB8C /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		B630E5741990BF7200CBFB8C /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				B630E5751990BF7200CBFB8C /* Bear.png */,
+				B630E5761990BF7200CBFB8C /* Birds.png */,
+				B630E5771990BF7200CBFB8C /* Chimp.png */,
+				B630E5781990BF7200CBFB8C /* Giraffe.png */,
+				B630E5791990BF7200CBFB8C /* Goat.png */,
+				B630E57A1990BF7200CBFB8C /* Tiger.png */,
+				B630E57B1990BF7200CBFB8C /* Zebra.png */,
+			);
+			path = Animals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,10 +277,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B630E5801990BF7200CBFB8C /* Goat.png in Resources */,
 				B630E54D1990BDF300CBFB8C /* Main_iPad.storyboard in Resources */,
 				B630E5521990BDF300CBFB8C /* Images.xcassets in Resources */,
+				B630E57F1990BF7200CBFB8C /* Giraffe.png in Resources */,
+				B630E57C1990BF7200CBFB8C /* Bear.png in Resources */,
+				B630E5811990BF7200CBFB8C /* Tiger.png in Resources */,
 				B630E54A1990BDF300CBFB8C /* Main_iPhone.storyboard in Resources */,
+				B630E5821990BF7200CBFB8C /* Zebra.png in Resources */,
+				B630E57D1990BF7200CBFB8C /* Birds.png in Resources */,
 				B630E5411990BDF300CBFB8C /* InfoPlist.strings in Resources */,
+				B630E57E1990BF7200CBFB8C /* Chimp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B630E5501990BDF300CBFB8C /* ViewController.m in Sources */,
+				B630E5711990BE1D00CBFB8C /* iCarousel.m in Sources */,
 				B630E5471990BDF300CBFB8C /* AppDelegate.m in Sources */,
 				B630E5431990BDF300CBFB8C /* main.m in Sources */,
 			);
