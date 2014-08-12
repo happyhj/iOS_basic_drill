@@ -46,6 +46,7 @@
 		B623072B1999D89300F26EF4 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B62307151999D89300F26EF4 /* 22.jpg */; };
 		B623072E1999DD2400F26EF4 /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B623072D1999DD2400F26EF4 /* AppModel.m */; };
 		B62307781999E97B00F26EF4 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62307771999E97B00F26EF4 /* PhotoViewController.m */; };
+		B6230780199A0C3800F26EF4 /* ImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B623077F199A0C3800F26EF4 /* ImageViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		B623072D1999DD2400F26EF4 /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
 		B62307761999E97B00F26EF4 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		B62307771999E97B00F26EF4 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		B623077E199A0C3800F26EF4 /* ImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewCell.h; path = ../ImageViewCell.h; sourceTree = "<group>"; };
+		B623077F199A0C3800F26EF4 /* ImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewCell.m; path = ../ImageViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,8 @@
 		B62306CD1999D83100F26EF4 /* MidtermTableView */ = {
 			isa = PBXGroup;
 			children = (
+				B623077E199A0C3800F26EF4 /* ImageViewCell.h */,
+				B623077F199A0C3800F26EF4 /* ImageViewCell.m */,
 				B62306FF1999D87E00F26EF4 /* images */,
 				B62306D61999D83100F26EF4 /* AppDelegate.h */,
 				B62306D71999D83100F26EF4 /* AppDelegate.m */,
@@ -359,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6230780199A0C3800F26EF4 /* ImageViewCell.m in Sources */,
 				B62306E11999D83100F26EF4 /* AlbumViewController.m in Sources */,
 				B62306D81999D83100F26EF4 /* AppDelegate.m in Sources */,
 				B62306D41999D83100F26EF4 /* main.m in Sources */,

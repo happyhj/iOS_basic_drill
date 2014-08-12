@@ -46,6 +46,8 @@
     [self.photoDate setText:self.date];
     UIImage *image = [UIImage imageNamed: self.image];
     [self.photoImage setImage:image];
+    [self.photoImage setContentMode : UIViewContentModeScaleAspectFill];
+    self.photoImage.clipsToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning

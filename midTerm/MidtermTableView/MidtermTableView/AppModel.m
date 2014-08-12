@@ -17,12 +17,6 @@
         NSData *jsonData = [[NSString stringWithUTF8String:data_] dataUsingEncoding:NSUTF8StringEncoding];
         NSArray *dict = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
         data = [dict mutableCopy];
-        
-        // 초기화 되었다는 신호를 노티피케이션 센터에 날린다.
-        [[NSNotificationCenter defaultCenter]
-         postNotificationName:@"modelInitializedNotification"
-         object:self
-         userInfo:nil];
     }
     return self;
 }
@@ -34,14 +28,18 @@
 }
 -(void) sort {
     NSArray *sortedArray;
-    sortedArray = [data sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+    data = [data sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
         NSString *first = [(NSDictionary*)a objectForKey:@"date"];
         NSString *second = [(NSDictionary*)b objectForKey:@"date"];
         return [first compare:second];
     }];
-    data = sortedArray;
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"modelInitializedNotification"
+     object:nil
+     userInfo:nil];
 }
 - (void) deleteAtIndex:(NSInteger)integer {
+   // NSLog(@"!@#!@#!@");
     [data removeObjectAtIndex:integer];
 }
 @end
