@@ -15,7 +15,7 @@
 		B62306D81999D83100F26EF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B62306D71999D83100F26EF4 /* AppDelegate.m */; };
 		B62306DB1999D83100F26EF4 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62306D91999D83100F26EF4 /* Main_iPhone.storyboard */; };
 		B62306DE1999D83100F26EF4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62306DC1999D83100F26EF4 /* Main_iPad.storyboard */; };
-		B62306E11999D83100F26EF4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62306E01999D83100F26EF4 /* ViewController.m */; };
+		B62306E11999D83100F26EF4 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62306E01999D83100F26EF4 /* AlbumViewController.m */; };
 		B62306E31999D83100F26EF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62306E21999D83100F26EF4 /* Images.xcassets */; };
 		B62306EA1999D83100F26EF4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62306E91999D83100F26EF4 /* XCTest.framework */; };
 		B62306EB1999D83100F26EF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62306C71999D83100F26EF4 /* Foundation.framework */; };
@@ -45,6 +45,7 @@
 		B623072A1999D89300F26EF4 /* 21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B62307141999D89300F26EF4 /* 21.jpg */; };
 		B623072B1999D89300F26EF4 /* 22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B62307151999D89300F26EF4 /* 22.jpg */; };
 		B623072E1999DD2400F26EF4 /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B623072D1999DD2400F26EF4 /* AppModel.m */; };
+		B62307781999E97B00F26EF4 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62307771999E97B00F26EF4 /* PhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +71,8 @@
 		B62306D71999D83100F26EF4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B62306DA1999D83100F26EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		B62306DD1999D83100F26EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		B62306DF1999D83100F26EF4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B62306E01999D83100F26EF4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B62306DF1999D83100F26EF4 /* AlbumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		B62306E01999D83100F26EF4 /* AlbumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
 		B62306E21999D83100F26EF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B62306E81999D83100F26EF4 /* MidtermTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MidtermTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62306E91999D83100F26EF4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -102,6 +103,8 @@
 		B62307151999D89300F26EF4 /* 22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 22.jpg; sourceTree = "<group>"; };
 		B623072C1999DD2400F26EF4 /* AppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppModel.h; sourceTree = "<group>"; };
 		B623072D1999DD2400F26EF4 /* AppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppModel.m; sourceTree = "<group>"; };
+		B62307761999E97B00F26EF4 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		B62307771999E97B00F26EF4 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +169,10 @@
 				B62306D71999D83100F26EF4 /* AppDelegate.m */,
 				B62306D91999D83100F26EF4 /* Main_iPhone.storyboard */,
 				B62306DC1999D83100F26EF4 /* Main_iPad.storyboard */,
-				B62306DF1999D83100F26EF4 /* ViewController.h */,
-				B62306E01999D83100F26EF4 /* ViewController.m */,
+				B62306DF1999D83100F26EF4 /* AlbumViewController.h */,
+				B62306E01999D83100F26EF4 /* AlbumViewController.m */,
+				B62307761999E97B00F26EF4 /* PhotoViewController.h */,
+				B62307771999E97B00F26EF4 /* PhotoViewController.m */,
 				B623072C1999DD2400F26EF4 /* AppModel.h */,
 				B623072D1999DD2400F26EF4 /* AppModel.m */,
 				B62306E21999D83100F26EF4 /* Images.xcassets */,
@@ -354,10 +359,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B62306E11999D83100F26EF4 /* ViewController.m in Sources */,
+				B62306E11999D83100F26EF4 /* AlbumViewController.m in Sources */,
 				B62306D81999D83100F26EF4 /* AppDelegate.m in Sources */,
 				B62306D41999D83100F26EF4 /* main.m in Sources */,
 				B623072E1999DD2400F26EF4 /* AppModel.m in Sources */,
+				B62307781999E97B00F26EF4 /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

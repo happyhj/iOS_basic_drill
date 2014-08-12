@@ -13,4 +13,8 @@
     NSMutableArray *data;
 }
 -(id)initWithUTF8String:(char*)data_;
+-(NSInteger) getCount;
+-(NSDictionary*) dictionaryAtIndex:(NSInteger)integer;
+-(void) sort;
+
 @end

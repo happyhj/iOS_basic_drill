@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>6C9A7527-0905-4D7B-9855-1AD80801F63D</string>
+	<string>A7285860-82DC-4E4A-A00A-08776D877D40</string>
 	<key>IDESourceControlProjectName</key>
 	<string>MasterDetail</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>291AD930-4F3C-4C06-8AE9-EC2336CB9ACD</string>
 			<key>IDESourceControlWCCName</key>
-			<string>MidtermTableView</string>
+			<string>MasterDetail</string>
 		</dict>
 	</array>
 </dict>

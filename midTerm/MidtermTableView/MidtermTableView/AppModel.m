@@ -26,4 +26,19 @@
     }
     return self;
 }
+-(NSInteger) getCount {
+    return [data count];
+}
+-(NSDictionary*) dictionaryAtIndex:(NSInteger)integer {
+    return [data objectAtIndex:integer];
+}
+-(void) sort {
+    NSArray *sortedArray;
+    sortedArray = [data sortedArrayUsingComparator:^NSComparisonResult(id a, id b) {
+        NSString *first = [(NSDictionary*)a objectForKey:@"date"];
+        NSString *second = [(NSDictionary*)b objectForKey:@"date"];
+        return [first compare:second];
+    }];
+    data = sortedArray;
+}
 @end

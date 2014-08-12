@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "AppModel.h"
+#import "PhotoViewController.h"
 
-@interface ViewController : UIViewController
+@interface AlbumViewController : UITableViewController
 {
     AppModel *appModel;
+    char* initalData;
 }
+
 @end
