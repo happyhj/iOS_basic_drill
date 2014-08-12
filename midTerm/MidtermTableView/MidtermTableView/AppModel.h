@@ -16,5 +16,5 @@
 -(NSInteger) getCount;
 -(NSDictionary*) dictionaryAtIndex:(NSInteger)integer;
 -(void) sort;
-
+- (void) deleteAtIndex:(NSInteger)integer;
 @end

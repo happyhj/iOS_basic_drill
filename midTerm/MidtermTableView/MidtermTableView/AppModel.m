@@ -41,4 +41,7 @@
     }];
     data = sortedArray;
 }
+- (void) deleteAtIndex:(NSInteger)integer {
+    [data removeObjectAtIndex:integer];
+}
 @end
