@@ -44,10 +44,21 @@
     NSLog(@"viewDidLoad");
     [self.photoTitle setText:self.title];
     [self.photoDate setText:self.date];
-    UIImage *image = [UIImage imageNamed: self.image];
+    
+    UIImage *image = [self getUIImageWithPath: self.image];
+    
     [self.photoImage setImage:image];
     [self.photoImage setContentMode : UIViewContentModeScaleAspectFill];
     self.photoImage.clipsToBounds = YES;
+}
+
+- (UIImage*) getUIImageWithPath:(NSString*)path
+{
+    UIImage *image = [UIImage imageWithContentsOfFile:path];
+    if (image == NULL) {
+        image = [UIImage imageNamed: path];
+    }
+    return image;
 }
 
 - (void)didReceiveMemoryWarning

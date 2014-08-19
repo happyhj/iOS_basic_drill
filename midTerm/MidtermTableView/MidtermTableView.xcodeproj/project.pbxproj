@@ -47,6 +47,7 @@
 		B623072E1999DD2400F26EF4 /* AppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B623072D1999DD2400F26EF4 /* AppModel.m */; };
 		B62307781999E97B00F26EF4 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B62307771999E97B00F26EF4 /* PhotoViewController.m */; };
 		B6230780199A0C3800F26EF4 /* ImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B623077F199A0C3800F26EF4 /* ImageViewCell.m */; };
+		B6403C7319A32B22003A0D85 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B6403C7219A32B22003A0D85 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,8 @@
 		B62307771999E97B00F26EF4 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		B623077E199A0C3800F26EF4 /* ImageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewCell.h; path = ../ImageViewCell.h; sourceTree = "<group>"; };
 		B623077F199A0C3800F26EF4 /* ImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewCell.m; path = ../ImageViewCell.m; sourceTree = "<group>"; };
+		B6403C7119A32B22003A0D85 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B6403C7219A32B22003A0D85 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 		B62306CD1999D83100F26EF4 /* MidtermTableView */ = {
 			isa = PBXGroup;
 			children = (
+				B6403C7119A32B22003A0D85 /* Reachability.h */,
+				B6403C7219A32B22003A0D85 /* Reachability.m */,
 				B623077E199A0C3800F26EF4 /* ImageViewCell.h */,
 				B623077F199A0C3800F26EF4 /* ImageViewCell.m */,
 				B62306FF1999D87E00F26EF4 /* images */,
@@ -367,6 +372,7 @@
 				B6230780199A0C3800F26EF4 /* ImageViewCell.m in Sources */,
 				B62306E11999D83100F26EF4 /* AlbumViewController.m in Sources */,
 				B62306D81999D83100F26EF4 /* AppDelegate.m in Sources */,
+				B6403C7319A32B22003A0D85 /* Reachability.m in Sources */,
 				B62306D41999D83100F26EF4 /* main.m in Sources */,
 				B623072E1999DD2400F26EF4 /* AppModel.m in Sources */,
 				B62307781999E97B00F26EF4 /* PhotoViewController.m in Sources */,
@@ -584,6 +590,7 @@
 				B62306FB1999D83100F26EF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B62306FC1999D83100F26EF4 /* Build configuration list for PBXNativeTarget "MidtermTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +599,7 @@
 				B62306FE1999D83100F26EF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

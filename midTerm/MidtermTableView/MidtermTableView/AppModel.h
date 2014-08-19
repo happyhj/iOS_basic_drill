@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AppModel : NSObject
+@interface AppModel : NSObject <NSURLConnectionDataDelegate>
 {
     NSMutableArray *data;
+    NSMutableDictionary *imageDownloadBuffer;
 }
--(id)initWithUTF8String:(char*)data_;
+-(id)init;
 -(NSInteger) getCount;
 -(NSDictionary*) dictionaryAtIndex:(NSInteger)integer;
 -(void) sort;

@@ -28,19 +28,14 @@
                                                object:nil]; // 어디에서 알림을 발행했는지 쳐다보고 싶은 대상. 누가발행했든 상관없이 알고 싶으면 nil
 
     [self initModel];
-    // 모델 인스턴스 만들고 데이터 초기화
-    appModel = [[AppModel alloc] initWithUTF8String:initalData];
     
     self.tableView.allowsMultipleSelectionDuringEditing = NO;
 
 }
 
 - (void) initModel{
-    //  모델초기화할 데이터를 JSON string으로 마련
-    initalData = "[{\"title\":\"초록\",\"image\":\"01.jpg\",\"date\":\"20140116\"},\ {\"title\":\"장미\",\"image\":\"02.jpg\",\"date\":\"20140505\"},\ {\"title\":\"낙엽\",\"image\":\"03.jpg\",\"date\":\"20131212\"},\ {\"title\":\"계단\",\"image\":\"04.jpg\",\"date\":\"20130301\"},\ {\"title\":\"벽돌\",\"image\":\"05.jpg\",\"date\":\"20140101\"},\ {\"title\":\"바다\",\"image\":\"06.jpg\",\"date\":\"20130707\"},\ {\"title\":\"벌레\",\"image\":\"07.jpg\",\"date\":\"20130815\"},\ {\"title\":\"나무\",\"image\":\"08.jpg\",\"date\":\"20131231\"},\ {\"title\":\"흑백\",\"image\":\"09.jpg\",\"date\":\"20140102\"}]";
-    
-    appModel = [[AppModel alloc] initWithUTF8String:initalData];
-    
+    appModel = [[AppModel alloc] init];
+
     // 노티를 날리는 건 어쩔 수 없이 옵저버에게 달았다. 모델의 init 메소드에서 노티를 보내니 이상하더라요.
     // 초기화 되었다는 신호를 노티피케이션 센터에 날린다.
     [[NSNotificationCenter defaultCenter]
@@ -93,11 +88,23 @@
     NSDictionary *element = [appModel dictionaryAtIndex:indexPath.row];
     cell.cellTitle.text = [element objectForKey:@"title"];
     cell.cellDate.text = [element objectForKey:@"date"];
-    UIImage *image = [UIImage imageNamed: [element objectForKey:@"image"]];
+
+    
+    UIImage *image = [self getUIImageFrom:element];
+
     [cell.cellImage setImage:image];
     [cell.cellImage setContentMode : UIViewContentModeScaleAspectFill];
     cell.cellImage.clipsToBounds = YES;
     return cell;
+}
+
+- (UIImage*) getUIImageFrom:(NSDictionary*) dict
+{
+    UIImage *image = [UIImage imageWithContentsOfFile:[dict objectForKey:@"image"]];
+    if (image == NULL) {
+        image = [UIImage imageNamed: [dict objectForKey:@"image"]];
+    }
+    return image;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

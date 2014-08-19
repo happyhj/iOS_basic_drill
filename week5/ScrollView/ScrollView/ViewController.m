@@ -68,7 +68,7 @@
             // ImageView에서 Image를 메모리 해제하도록 한다.
             if([element isKindOfClass:[UIImageView class]]) {
                 [element removeFromSuperview];
-                element = nil;
+                //element = nil;
                 [self.imageCacheArray replaceObjectAtIndex:i withObject:[NSNull null]];
             }
         }
