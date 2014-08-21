@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5AF4D192-1BA2-4C99-83CD-9FF8521DB974</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tcp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1EE70FB1-8DEA-4566-BDAD-CE700CB03DFF</key>
+		<string>https://github.com/happyhj/iOS_basic_drill.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>week7/Tcp/Tcp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1EE70FB1-8DEA-4566-BDAD-CE700CB03DFF</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/happyhj/iOS_basic_drill.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1EE70FB1-8DEA-4566-BDAD-CE700CB03DFF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1EE70FB1-8DEA-4566-BDAD-CE700CB03DFF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS_basic_drill</string>
+		</dict>
+	</array>
+</dict>
+</plist>

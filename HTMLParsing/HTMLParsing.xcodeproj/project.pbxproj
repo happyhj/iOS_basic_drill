@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B67D522519A35E3100B5D667 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67D522419A35E3100B5D667 /* Foundation.framework */; };
+		B67D522719A35E3100B5D667 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67D522619A35E3100B5D667 /* CoreGraphics.framework */; };
+		B67D522919A35E3100B5D667 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67D522819A35E3100B5D667 /* UIKit.framework */; };
+		B67D522F19A35E3100B5D667 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B67D522D19A35E3100B5D667 /* InfoPlist.strings */; };
+		B67D523119A35E3100B5D667 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B67D523019A35E3100B5D667 /* main.m */; };
+		B67D523519A35E3100B5D667 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B67D523419A35E3100B5D667 /* AppDelegate.m */; };
+		B67D523819A35E3100B5D667 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67D523619A35E3100B5D667 /* Main_iPhone.storyboard */; };
+		B67D523B19A35E3100B5D667 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67D523919A35E3100B5D667 /* Main_iPad.storyboard */; };
+		B67D523E19A35E3100B5D667 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67D523D19A35E3100B5D667 /* MasterViewController.m */; };
+		B67D524119A35E3100B5D667 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B67D524019A35E3100B5D667 /* DetailViewController.m */; };
+		B67D524319A35E3100B5D667 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67D524219A35E3100B5D667 /* Images.xcassets */; };
+		B67D524A19A35E3100B5D667 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67D524919A35E3100B5D667 /* XCTest.framework */; };
+		B67D524B19A35E3100B5D667 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67D522419A35E3100B5D667 /* Foundation.framework */; };
+		B67D524C19A35E3100B5D667 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67D522819A35E3100B5D667 /* UIKit.framework */; };
+		B67D525419A35E3100B5D667 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B67D525219A35E3100B5D667 /* InfoPlist.strings */; };
+		B67D525619A35E3100B5D667 /* HTMLParsingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B67D525519A35E3100B5D667 /* HTMLParsingTests.m */; };
+		B67D526219A35E4B00B5D667 /* Tutorial.m in Sources */ = {isa = PBXBuildFile; fileRef = B67D526119A35E4B00B5D667 /* Tutorial.m */; };
+		B67D526519A35E7100B5D667 /* Contributor.m in Sources */ = {isa = PBXBuildFile; fileRef = B67D526419A35E7100B5D667 /* Contributor.m */; };
+		B67D526D19A35EAC00B5D667 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = B67D526819A35EAC00B5D667 /* TFHpple.m */; };
+		B67D526E19A35EAC00B5D667 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B67D526A19A35EAC00B5D667 /* TFHppleElement.m */; };
+		B67D526F19A35EAC00B5D667 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = B67D526C19A35EAC00B5D667 /* XPathQuery.m */; };
+		B67D527119A35F2E00B5D667 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B67D527019A35F2E00B5D667 /* libxml2.2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B67D524D19A35E3100B5D667 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B67D521919A35E3100B5D667 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B67D522019A35E3100B5D667;
+			remoteInfo = HTMLParsing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B67D522119A35E3100B5D667 /* HTMLParsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTMLParsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B67D522419A35E3100B5D667 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B67D522619A35E3100B5D667 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B67D522819A35E3100B5D667 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B67D522C19A35E3100B5D667 /* HTMLParsing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HTMLParsing-Info.plist"; sourceTree = "<group>"; };
+		B67D522E19A35E3100B5D667 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B67D523019A35E3100B5D667 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B67D523219A35E3100B5D667 /* HTMLParsing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HTMLParsing-Prefix.pch"; sourceTree = "<group>"; };
+		B67D523319A35E3100B5D667 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B67D523419A35E3100B5D667 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B67D523719A35E3100B5D667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		B67D523A19A35E3100B5D667 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B67D523C19A35E3100B5D667 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		B67D523D19A35E3100B5D667 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		B67D523F19A35E3100B5D667 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B67D524019A35E3100B5D667 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B67D524219A35E3100B5D667 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B67D524819A35E3100B5D667 /* HTMLParsingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTMLParsingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B67D524919A35E3100B5D667 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B67D525119A35E3100B5D667 /* HTMLParsingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HTMLParsingTests-Info.plist"; sourceTree = "<group>"; };
+		B67D525319A35E3100B5D667 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B67D525519A35E3100B5D667 /* HTMLParsingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMLParsingTests.m; sourceTree = "<group>"; };
+		B67D526019A35E4B00B5D667 /* Tutorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tutorial.h; sourceTree = "<group>"; };
+		B67D526119A35E4B00B5D667 /* Tutorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tutorial.m; sourceTree = "<group>"; };
+		B67D526319A35E7100B5D667 /* Contributor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contributor.h; sourceTree = "<group>"; };
+		B67D526419A35E7100B5D667 /* Contributor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contributor.m; sourceTree = "<group>"; };
+		B67D526719A35EAC00B5D667 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		B67D526819A35EAC00B5D667 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		B67D526919A35EAC00B5D667 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		B67D526A19A35EAC00B5D667 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		B67D526B19A35EAC00B5D667 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		B67D526C19A35EAC00B5D667 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		B67D527019A35F2E00B5D667 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B67D521E19A35E3100B5D667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B67D527119A35F2E00B5D667 /* libxml2.2.dylib in Frameworks */,
+				B67D522719A35E3100B5D667 /* CoreGraphics.framework in Frameworks */,
+				B67D522919A35E3100B5D667 /* UIKit.framework in Frameworks */,
+				B67D522519A35E3100B5D667 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B67D524519A35E3100B5D667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B67D524A19A35E3100B5D667 /* XCTest.framework in Frameworks */,
+				B67D524C19A35E3100B5D667 /* UIKit.framework in Frameworks */,
+				B67D524B19A35E3100B5D667 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B67D521819A35E3100B5D667 = {
+			isa = PBXGroup;
+			children = (
+				B67D522A19A35E3100B5D667 /* HTMLParsing */,
+				B67D524F19A35E3100B5D667 /* HTMLParsingTests */,
+				B67D522319A35E3100B5D667 /* Frameworks */,
+				B67D522219A35E3100B5D667 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B67D522219A35E3100B5D667 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B67D522119A35E3100B5D667 /* HTMLParsing.app */,
+				B67D524819A35E3100B5D667 /* HTMLParsingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B67D522319A35E3100B5D667 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B67D527019A35F2E00B5D667 /* libxml2.2.dylib */,
+				B67D522419A35E3100B5D667 /* Foundation.framework */,
+				B67D522619A35E3100B5D667 /* CoreGraphics.framework */,
+				B67D522819A35E3100B5D667 /* UIKit.framework */,
+				B67D524919A35E3100B5D667 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B67D522A19A35E3100B5D667 /* HTMLParsing */ = {
+			isa = PBXGroup;
+			children = (
+				B67D526619A35E9400B5D667 /* Happle */,
+				B67D525F19A35E3D00B5D667 /* Model */,
+				B67D523319A35E3100B5D667 /* AppDelegate.h */,
+				B67D523419A35E3100B5D667 /* AppDelegate.m */,
+				B67D523619A35E3100B5D667 /* Main_iPhone.storyboard */,
+				B67D523919A35E3100B5D667 /* Main_iPad.storyboard */,
+				B67D523C19A35E3100B5D667 /* MasterViewController.h */,
+				B67D523D19A35E3100B5D667 /* MasterViewController.m */,
+				B67D523F19A35E3100B5D667 /* DetailViewController.h */,
+				B67D524019A35E3100B5D667 /* DetailViewController.m */,
+				B67D524219A35E3100B5D667 /* Images.xcassets */,
+				B67D522B19A35E3100B5D667 /* Supporting Files */,
+			);
+			path = HTMLParsing;
+			sourceTree = "<group>";
+		};
+		B67D522B19A35E3100B5D667 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B67D522C19A35E3100B5D667 /* HTMLParsing-Info.plist */,
+				B67D522D19A35E3100B5D667 /* InfoPlist.strings */,
+				B67D523019A35E3100B5D667 /* main.m */,
+				B67D523219A35E3100B5D667 /* HTMLParsing-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B67D524F19A35E3100B5D667 /* HTMLParsingTests */ = {
+			isa = PBXGroup;
+			children = (
+				B67D525519A35E3100B5D667 /* HTMLParsingTests.m */,
+				B67D525019A35E3100B5D667 /* Supporting Files */,
+			);
+			path = HTMLParsingTests;
+			sourceTree = "<group>";
+		};
+		B67D525019A35E3100B5D667 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B67D525119A35E3100B5D667 /* HTMLParsingTests-Info.plist */,
+				B67D525219A35E3100B5D667 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B67D525F19A35E3D00B5D667 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B67D526019A35E4B00B5D667 /* Tutorial.h */,
+				B67D526119A35E4B00B5D667 /* Tutorial.m */,
+				B67D526319A35E7100B5D667 /* Contributor.h */,
+				B67D526419A35E7100B5D667 /* Contributor.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B67D526619A35E9400B5D667 /* Happle */ = {
+			isa = PBXGroup;
+			children = (
+				B67D526719A35EAC00B5D667 /* TFHpple.h */,
+				B67D526819A35EAC00B5D667 /* TFHpple.m */,
+				B67D526919A35EAC00B5D667 /* TFHppleElement.h */,
+				B67D526A19A35EAC00B5D667 /* TFHppleElement.m */,
+				B67D526B19A35EAC00B5D667 /* XPathQuery.h */,
+				B67D526C19A35EAC00B5D667 /* XPathQuery.m */,
+			);
+			name = Happle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B67D522019A35E3100B5D667 /* HTMLParsing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B67D525919A35E3100B5D667 /* Build configuration list for PBXNativeTarget "HTMLParsing" */;
+			buildPhases = (
+				B67D521D19A35E3100B5D667 /* Sources */,
+				B67D521E19A35E3100B5D667 /* Frameworks */,
+				B67D521F19A35E3100B5D667 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTMLParsing;
+			productName = HTMLParsing;
+			productReference = B67D522119A35E3100B5D667 /* HTMLParsing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B67D524719A35E3100B5D667 /* HTMLParsingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B67D525C19A35E3100B5D667 /* Build configuration list for PBXNativeTarget "HTMLParsingTests" */;
+			buildPhases = (
+				B67D524419A35E3100B5D667 /* Sources */,
+				B67D524519A35E3100B5D667 /* Frameworks */,
+				B67D524619A35E3100B5D667 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B67D524E19A35E3100B5D667 /* PBXTargetDependency */,
+			);
+			name = HTMLParsingTests;
+			productName = HTMLParsingTests;
+			productReference = B67D524819A35E3100B5D667 /* HTMLParsingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B67D521919A35E3100B5D667 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___NHNNEXT___";
+				TargetAttributes = {
+					B67D524719A35E3100B5D667 = {
+						TestTargetID = B67D522019A35E3100B5D667;
+					};
+				};
+			};
+			buildConfigurationList = B67D521C19A35E3100B5D667 /* Build configuration list for PBXProject "HTMLParsing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B67D521819A35E3100B5D667;
+			productRefGroup = B67D522219A35E3100B5D667 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B67D522019A35E3100B5D667 /* HTMLParsing */,
+				B67D524719A35E3100B5D667 /* HTMLParsingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B67D521F19A35E3100B5D667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B67D523B19A35E3100B5D667 /* Main_iPad.storyboard in Resources */,
+				B67D524319A35E3100B5D667 /* Images.xcassets in Resources */,
+				B67D523819A35E3100B5D667 /* Main_iPhone.storyboard in Resources */,
+				B67D522F19A35E3100B5D667 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B67D524619A35E3100B5D667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B67D525419A35E3100B5D667 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B67D521D19A35E3100B5D667 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B67D526E19A35EAC00B5D667 /* TFHppleElement.m in Sources */,
+				B67D526219A35E4B00B5D667 /* Tutorial.m in Sources */,
+				B67D523519A35E3100B5D667 /* AppDelegate.m in Sources */,
+				B67D523E19A35E3100B5D667 /* MasterViewController.m in Sources */,
+				B67D526F19A35EAC00B5D667 /* XPathQuery.m in Sources */,
+				B67D526D19A35EAC00B5D667 /* TFHpple.m in Sources */,
+				B67D523119A35E3100B5D667 /* main.m in Sources */,
+				B67D524119A35E3100B5D667 /* DetailViewController.m in Sources */,
+				B67D526519A35E7100B5D667 /* Contributor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B67D524419A35E3100B5D667 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B67D525619A35E3100B5D667 /* HTMLParsingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B67D524E19A35E3100B5D667 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B67D522019A35E3100B5D667 /* HTMLParsing */;
+			targetProxy = B67D524D19A35E3100B5D667 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B67D522D19A35E3100B5D667 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B67D522E19A35E3100B5D667 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B67D523619A35E3100B5D667 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B67D523719A35E3100B5D667 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B67D523919A35E3100B5D667 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B67D523A19A35E3100B5D667 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		B67D525219A35E3100B5D667 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B67D525319A35E3100B5D667 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B67D525719A35E3100B5D667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B67D525819A35E3100B5D667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B67D525A19A35E3100B5D667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HTMLParsing/HTMLParsing-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = "HTMLParsing/HTMLParsing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B67D525B19A35E3100B5D667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HTMLParsing/HTMLParsing-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = "HTMLParsing/HTMLParsing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B67D525D19A35E3100B5D667 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HTMLParsing.app/HTMLParsing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HTMLParsing/HTMLParsing-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HTMLParsingTests/HTMLParsingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B67D525E19A35E3100B5D667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HTMLParsing.app/HTMLParsing";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HTMLParsing/HTMLParsing-Prefix.pch";
+				INFOPLIST_FILE = "HTMLParsingTests/HTMLParsingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B67D521C19A35E3100B5D667 /* Build configuration list for PBXProject "HTMLParsing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B67D525719A35E3100B5D667 /* Debug */,
+				B67D525819A35E3100B5D667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B67D525919A35E3100B5D667 /* Build configuration list for PBXNativeTarget "HTMLParsing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B67D525A19A35E3100B5D667 /* Debug */,
+				B67D525B19A35E3100B5D667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B67D525C19A35E3100B5D667 /* Build configuration list for PBXNativeTarget "HTMLParsingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B67D525D19A35E3100B5D667 /* Debug */,
+				B67D525E19A35E3100B5D667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B67D521919A35E3100B5D667 /* Project object */;
+}
