@@ -12,22 +12,34 @@
 	<dict>
 		<key>291AD930-4F3C-4C06-8AE9-EC2336CB9ACD</key>
 		<string>https://github.com/happyhj/iOS_basic_drill.git</string>
+		<key>2D1B874A5A20F8FEC7091F561EE16A5E7C4D2661</key>
+		<string>https://github.com/happyhj/iOS_basic_drill.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>midTerm/MidtermTableView/MidtermTableView.xcodeproj/project.xcworkspace</string>
+	<string>midTerm/MidtermTableView/MidtermTableView.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>291AD930-4F3C-4C06-8AE9-EC2336CB9ACD</key>
+		<string>../../../../../MasterDetail</string>
+		<key>2D1B874A5A20F8FEC7091F561EE16A5E7C4D2661</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/happyhj/iOS_basic_drill.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>291AD930-4F3C-4C06-8AE9-EC2336CB9ACD</string>
+	<string>2D1B874A5A20F8FEC7091F561EE16A5E7C4D2661</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2D1B874A5A20F8FEC7091F561EE16A5E7C4D2661</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS_basic_drill</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

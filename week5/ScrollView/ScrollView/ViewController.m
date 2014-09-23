@@ -18,7 +18,6 @@
 {
     [super viewDidLoad];
 
-
     self.imageCount = @(22);
     self.imageHeight = @((int)self.scroll.frame.size.height);
     self.scrollContentHeight = @([self.imageCount intValue] * [self.imageHeight intValue]);
