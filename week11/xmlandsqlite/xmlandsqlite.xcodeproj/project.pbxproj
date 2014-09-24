@@ -16,7 +16,6 @@
 		B616BDD119CAAEDE00698010 /* xmlandsqliteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B616BDD019CAAEDE00698010 /* xmlandsqliteTests.m */; };
 		B616BDDB19CAAFC300698010 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B616BDDA19CAAFC300698010 /* libsqlite3.dylib */; };
 		B616BDE019CAB46400698010 /* top25.db in Resources */ = {isa = PBXBuildFile; fileRef = B616BDDF19CAB46400698010 /* top25.db */; };
-		B616BDE319CAC12D00698010 /* rssPatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B616BDE219CAC12D00698010 /* rssPatcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +44,6 @@
 		B616BDD019CAAEDE00698010 /* xmlandsqliteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xmlandsqliteTests.m; sourceTree = "<group>"; };
 		B616BDDA19CAAFC300698010 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		B616BDDF19CAB46400698010 /* top25.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = top25.db; sourceTree = "<group>"; };
-		B616BDE119CAC12D00698010 /* rssPatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rssPatcher.h; sourceTree = "<group>"; };
-		B616BDE219CAC12D00698010 /* rssPatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rssPatcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +92,6 @@
 				B616BDB919CAAEDE00698010 /* AppDelegate.m */,
 				B616BDBB19CAAEDE00698010 /* ViewController.h */,
 				B616BDBC19CAAEDE00698010 /* ViewController.m */,
-				B616BDE119CAC12D00698010 /* rssPatcher.h */,
-				B616BDE219CAC12D00698010 /* rssPatcher.m */,
 				B616BDBE19CAAEDE00698010 /* Main.storyboard */,
 				B616BDC119CAAEDE00698010 /* Images.xcassets */,
 				B616BDC319CAAEDE00698010 /* LaunchScreen.xib */,
@@ -234,7 +229,6 @@
 			files = (
 				B616BDBD19CAAEDE00698010 /* ViewController.m in Sources */,
 				B616BDBA19CAAEDE00698010 /* AppDelegate.m in Sources */,
-				B616BDE319CAC12D00698010 /* rssPatcher.m in Sources */,
 				B616BDB719CAAEDE00698010 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +420,7 @@
 				B616BDD619CAAEDE00698010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B616BDD719CAAEDE00698010 /* Build configuration list for PBXNativeTarget "xmlandsqliteTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +429,7 @@
 				B616BDD919CAAEDE00698010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

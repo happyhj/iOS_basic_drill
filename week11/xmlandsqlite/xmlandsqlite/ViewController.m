@@ -51,8 +51,6 @@
     }
     
     songs = song_list;
-    //NSLog(@"%@",song_list);
-    rssPatcher* rss = [[rssPatcher alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {

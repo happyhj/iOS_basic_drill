@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "rssPatcher.h"
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
