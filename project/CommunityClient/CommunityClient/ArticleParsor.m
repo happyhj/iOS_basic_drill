@@ -11,30 +11,25 @@
 // listItem(NSDictionary *)을 받아서 5종류의 AtricleItem subclass중 하나로 내놓는 클래스
 @implementation ArticleParsor
 {
-    // 파싱을 하기위한 정보
     NSString * article_xpath;
     NSDictionary * article_content_xpaths;
-    
     //PostProcess * postProcess;
 }
 
-- (id) initWith:(NSDictionary*) boardDict
+- (id) initWithAttribute:(NSDictionary*) config
 {
     if (!(self = [super init]))
         return nil;
     
-    article_xpath = [[boardDict objectForKey:@"article"]objectForKey:@"article"];
-    article_content_xpaths = [[boardDict objectForKey:@"article"]objectForKey:@"article_content"];
-
+    article_xpath = [config objectForKey:@"article"];
+    article_content_xpaths = [config objectForKey:@"article_content"];
+    
     return self;
 }
 
+
 - (NSDictionary*) getAtricleItemWith:(NSDictionary *) listItem
 {
-  //  NSLog(@"      ??????      ");
-
-//    NSLog(@"%@", listItem);
-    
     // listItem에서 받은 정보를 통해 article HTML을 받아온다.
     NSURL *listUrl = [NSURL URLWithString:[listItem objectForKey:@"article_url"]];
     NSData *listHtmlData = [NSData dataWithContentsOfURL:listUrl];
@@ -47,7 +42,6 @@
 
     // 4 본문 만 가져옴
     TFHppleElement *contentElement = [listNodes objectAtIndex:0];
-    //NSLog(@"%@", contentElement);
 
     NSArray * article_content_keys = [article_content_xpaths allKeys];
     // 받아온 HTML에서 여러정보를 NSDictionary 로 가지가지 파싱해 온다.
@@ -55,11 +49,9 @@
     for (NSString *key in article_content_keys) {
         NSString * contentXpath = [article_content_xpaths objectForKey:key];
         NSArray * contentNodes = [contentElement searchWithXPathQuery:contentXpath];
-        //NSLog(@"<< %@ >>",key);
-        //NSLog(@"%@",contentXpath);
+
         NSMutableArray * contentList = [[NSMutableArray alloc]init];
         for (TFHppleElement * parsedNode in contentNodes) {
-            //NSLog(@"[[ %@ ]] ",content_key);
             if(nil == [parsedNode content]) { // 구하고자하는게 애트리뷰트의 값인 경우
                 [contentList addObject:[[parsedNode children][0] content]];
             } else {  // 구하고자 하는게 텍스트 콘텐츠인 경우
@@ -67,7 +59,6 @@
                 text = [text stringByReplacingOccurrencesOfString:@"\n" withString:@""];
                 text = [text stringByReplacingOccurrencesOfString:@"\r" withString:@""];
                 if([text length] > 2 ) {
-                    // NSLog(@"%@",text);
                     [contentList addObject:text];
                 }
             }
@@ -91,9 +82,7 @@
     }
     // list item 정보와 합친다.
     [articleDict setObject:listItem forKey:@"meta"];
-    NSLog(@"%@",articleDict);
 
-    
     return articleDict;
 };
 @end

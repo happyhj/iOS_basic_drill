@@ -9,13 +9,14 @@
 #import "CommunityParsor.h"
 #import "ListParsor.h"
 
-
 @implementation CommunityParsor
 {
     NSString * name_en;
     NSString * name_ko;
     NSString * domain;
     NSMutableArray * listParsors; // listParsor
+    
+    NSMutableArray * Articles; //
 }
 - (id) init
 {
@@ -45,7 +46,7 @@
     // 3. 게시판별 리스트파서를 생성한다.
     NSArray * boards = [json objectForKey:@"boards"];
     for (NSDictionary* board in boards){
-        [listParsors addObject:[[ListParsor alloc] initWithBoardAttribute:board]];
+        [listParsors addObject:[[ListParsor alloc] initWithAttribute:board]];
     }
     
     return self;
@@ -53,6 +54,7 @@
 }
 - (NSDictionary*) getFirstArticleCard
 {
-    return [listParsors[0] articleItems][0];
+ //   return [listParsors[0] articleItems][0];
+    return nil;
 }
 @end

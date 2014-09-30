@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Board.h"
 
 @interface Community : NSObject
+{
+    @public
+    NSString * name_en;
+    NSString * name_ko;
+    NSString * domain;
+}
+- (id) initWithAttribute:(NSDictionary*)config;
+- (Board *) boardAtIndex:(int) index;
 
 @end

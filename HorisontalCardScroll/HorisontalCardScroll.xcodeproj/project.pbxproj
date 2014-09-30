@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6A9952E19D9A4C700A67D1B /* BoardsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9952D19D9A4C700A67D1B /* BoardsView.m */; };
+		B6A9953519D9AF4800A67D1B /* BoardBannerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9953319D9AF4800A67D1B /* BoardBannerVC.m */; };
+		B6A9953619D9AF4800A67D1B /* BoardBannerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A9953419D9AF4800A67D1B /* BoardBannerVC.xib */; };
 		B6F8AE5E19B8703D005214DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F8AE5D19B8703D005214DE /* Foundation.framework */; };
 		B6F8AE6019B8703D005214DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F8AE5F19B8703D005214DE /* CoreGraphics.framework */; };
 		B6F8AE6219B8703D005214DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F8AE6119B8703D005214DE /* UIKit.framework */; };
@@ -21,6 +24,9 @@
 		B6F8AE7F19B8703D005214DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F8AE6119B8703D005214DE /* UIKit.framework */; };
 		B6F8AE8719B8703D005214DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6F8AE8519B8703D005214DE /* InfoPlist.strings */; };
 		B6F8AE8919B8703D005214DE /* HorisontalCardScrollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F8AE8819B8703D005214DE /* HorisontalCardScrollTests.m */; };
+		B6FBB33919D716F800B81BAC /* ArticlesView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB33819D716F800B81BAC /* ArticlesView.m */; };
+		B6FBB34A19D7E0E600B81BAC /* SimpleThumbnailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB34819D7E0E600B81BAC /* SimpleThumbnailVC.m */; };
+		B6FBB34B19D7E0E600B81BAC /* SimpleThumbnailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6FBB34919D7E0E600B81BAC /* SimpleThumbnailVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B6A9952C19D9A4C700A67D1B /* BoardsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardsView.h; sourceTree = "<group>"; };
+		B6A9952D19D9A4C700A67D1B /* BoardsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardsView.m; sourceTree = "<group>"; };
+		B6A9953219D9AF4800A67D1B /* BoardBannerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardBannerVC.h; path = ../BoardBannerVC.h; sourceTree = "<group>"; };
+		B6A9953319D9AF4800A67D1B /* BoardBannerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoardBannerVC.m; path = ../BoardBannerVC.m; sourceTree = "<group>"; };
+		B6A9953419D9AF4800A67D1B /* BoardBannerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BoardBannerVC.xib; path = ../BoardBannerVC.xib; sourceTree = "<group>"; };
 		B6F8AE5A19B8703D005214DE /* HorisontalCardScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorisontalCardScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F8AE5D19B8703D005214DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B6F8AE5F19B8703D005214DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +64,11 @@
 		B6F8AE8419B8703D005214DE /* HorisontalCardScrollTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HorisontalCardScrollTests-Info.plist"; sourceTree = "<group>"; };
 		B6F8AE8619B8703D005214DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B6F8AE8819B8703D005214DE /* HorisontalCardScrollTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorisontalCardScrollTests.m; sourceTree = "<group>"; };
+		B6FBB33719D716F800B81BAC /* ArticlesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticlesView.h; sourceTree = "<group>"; };
+		B6FBB33819D716F800B81BAC /* ArticlesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticlesView.m; sourceTree = "<group>"; };
+		B6FBB34719D7E0E600B81BAC /* SimpleThumbnailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleThumbnailVC.h; sourceTree = "<group>"; };
+		B6FBB34819D7E0E600B81BAC /* SimpleThumbnailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleThumbnailVC.m; sourceTree = "<group>"; };
+		B6FBB34919D7E0E600B81BAC /* SimpleThumbnailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleThumbnailVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +128,23 @@
 		B6F8AE6319B8703D005214DE /* HorisontalCardScroll */ = {
 			isa = PBXGroup;
 			children = (
+				B6A9953219D9AF4800A67D1B /* BoardBannerVC.h */,
+				B6A9953319D9AF4800A67D1B /* BoardBannerVC.m */,
+				B6A9953419D9AF4800A67D1B /* BoardBannerVC.xib */,
 				B6F8AE6C19B8703D005214DE /* AppDelegate.h */,
 				B6F8AE6D19B8703D005214DE /* AppDelegate.m */,
 				B6F8AE6F19B8703D005214DE /* Main.storyboard */,
+				B6FBB33719D716F800B81BAC /* ArticlesView.h */,
+				B6FBB33819D716F800B81BAC /* ArticlesView.m */,
 				B6F8AE7219B8703D005214DE /* ViewController.h */,
 				B6F8AE7319B8703D005214DE /* ViewController.m */,
 				B6F8AE7519B8703D005214DE /* Images.xcassets */,
 				B6F8AE6419B8703D005214DE /* Supporting Files */,
+				B6FBB34719D7E0E600B81BAC /* SimpleThumbnailVC.h */,
+				B6FBB34819D7E0E600B81BAC /* SimpleThumbnailVC.m */,
+				B6FBB34919D7E0E600B81BAC /* SimpleThumbnailVC.xib */,
+				B6A9952C19D9A4C700A67D1B /* BoardsView.h */,
+				B6A9952D19D9A4C700A67D1B /* BoardsView.m */,
 			);
 			path = HorisontalCardScroll;
 			sourceTree = "<group>";
@@ -228,7 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A9953619D9AF4800A67D1B /* BoardBannerVC.xib in Resources */,
 				B6F8AE7619B8703D005214DE /* Images.xcassets in Resources */,
+				B6FBB34B19D7E0E600B81BAC /* SimpleThumbnailVC.xib in Resources */,
 				B6F8AE6819B8703D005214DE /* InfoPlist.strings in Resources */,
 				B6F8AE7119B8703D005214DE /* Main.storyboard in Resources */,
 			);
@@ -252,6 +280,10 @@
 				B6F8AE7419B8703D005214DE /* ViewController.m in Sources */,
 				B6F8AE6E19B8703D005214DE /* AppDelegate.m in Sources */,
 				B6F8AE6A19B8703D005214DE /* main.m in Sources */,
+				B6FBB33919D716F800B81BAC /* ArticlesView.m in Sources */,
+				B6A9953519D9AF4800A67D1B /* BoardBannerVC.m in Sources */,
+				B6FBB34A19D7E0E600B81BAC /* SimpleThumbnailVC.m in Sources */,
+				B6A9952E19D9A4C700A67D1B /* BoardsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

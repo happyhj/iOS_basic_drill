@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D21E7EC9-621B-4C25-BC85-1B587D6FBF48</string>
+	<string>DD4FE746-C89D-4799-8F8F-75BCD57AAAA6</string>
 	<key>IDESourceControlProjectName</key>
-	<string>CommunityClient</string>
+	<string>BarGraphView</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>2D1B874A5A20F8FEC7091F561EE16A5E7C4D2661</key>
 		<string>https://github.com/happyhj/iOS_basic_drill.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>project/CommunityClient/CommunityClient.xcodeproj/project.xcworkspace</string>
+	<string>week8/BarGraphView/BarGraphView.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2D1B874A5A20F8FEC7091F561EE16A5E7C4D2661</key>

@@ -448,6 +448,7 @@
 				GCC_PREFIX_HEADER = "Carousel/Carousel-Prefix.pch";
 				INFOPLIST_FILE = "Carousel/Carousel-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -461,6 +462,7 @@
 				GCC_PREFIX_HEADER = "Carousel/Carousel-Prefix.pch";
 				INFOPLIST_FILE = "Carousel/Carousel-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -524,6 +526,7 @@
 				B630E56A1990BDF300CBFB8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B630E56B1990BDF300CBFB8C /* Build configuration list for PBXNativeTarget "CarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +535,7 @@
 				B630E56D1990BDF300CBFB8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

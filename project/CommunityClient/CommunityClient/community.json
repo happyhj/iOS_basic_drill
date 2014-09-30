@@ -1,9 +1,9 @@
-{
+[{
     "community_name_en": "clien",
     "community_name_ko": "클리앙",
     "domain": "clien.net",
     "boards": [{
-       "board_name_ko": "새소식",
+       "board_name_ko": "새로운소식",
        "board_name_en": "News",
        "article_key": "article_id",
        "list": {
@@ -21,14 +21,13 @@
             }
         },
        "article": {
-           "article": "//div[@class='resContents']/span",
+           "article": "//div[@class='resContents']",
            "article_content": {
-               "article_attached_img": "//div[@class='attachedImage']/img/@src",
-               "article_img": "//img/@src",
-               "article_outlink": "//p/a/text()",
-               "article_text": "//text()",
-               "article_youtube": "//p/iframe/@src"
+               "article_img": "//span[@id='writeContents']//img/@src | //div[@class='attachedImage']/img/@src",
+               "article_outlink": "//span[@id='writeContents']//p/a/@href",
+               "article_text": "//span[@id='writeContents']//text()",
+               "article_youtube": "//span[@id='writeContents']//p/iframe/@src"
             }
         }
     }]
-}
+}]

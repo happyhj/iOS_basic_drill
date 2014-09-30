@@ -10,7 +10,6 @@
 		B643392219B53B6900D092E4 /* CommunityParsor.m in Sources */ = {isa = PBXBuildFile; fileRef = B643392119B53B6900D092E4 /* CommunityParsor.m */; };
 		B643392519B5491C00D092E4 /* ListParsor.m in Sources */ = {isa = PBXBuildFile; fileRef = B643392419B5491C00D092E4 /* ListParsor.m */; };
 		B643392819B5514E00D092E4 /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B643392719B5514E00D092E4 /* ListItem.m */; };
-		B643392B19B5A45300D092E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B643392A19B5A45300D092E4 /* ViewController.m */; };
 		B643392D19B5A57700D092E4 /* community.json in Resources */ = {isa = PBXBuildFile; fileRef = B643392C19B5A57700D092E4 /* community.json */; };
 		B67D522519A35E3100B5D667 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67D522419A35E3100B5D667 /* Foundation.framework */; };
 		B67D522719A35E3100B5D667 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67D522619A35E3100B5D667 /* CoreGraphics.framework */; };
@@ -51,8 +50,6 @@
 		B643392419B5491C00D092E4 /* ListParsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListParsor.m; sourceTree = "<group>"; };
 		B643392619B5514E00D092E4 /* ListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
 		B643392719B5514E00D092E4 /* ListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
-		B643392919B5A45300D092E4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../../BarGraphView/BarGraphView/ViewController.h; sourceTree = "<group>"; };
-		B643392A19B5A45300D092E4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../../BarGraphView/BarGraphView/ViewController.m; sourceTree = "<group>"; };
 		B643392C19B5A57700D092E4 /* community.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = community.json; sourceTree = "<group>"; };
 		B67D522119A35E3100B5D667 /* HTMLParsing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTMLParsing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67D522419A35E3100B5D667 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -150,8 +147,6 @@
 				B67D523319A35E3100B5D667 /* AppDelegate.h */,
 				B67D523419A35E3100B5D667 /* AppDelegate.m */,
 				B67D523919A35E3100B5D667 /* Main_iPad.storyboard */,
-				B643392919B5A45300D092E4 /* ViewController.h */,
-				B643392A19B5A45300D092E4 /* ViewController.m */,
 				B643392019B53B6900D092E4 /* CommunityParsor.h */,
 				B643392119B53B6900D092E4 /* CommunityParsor.m */,
 				B643392319B5491C00D092E4 /* ListParsor.h */,
@@ -323,7 +318,6 @@
 				B67D523519A35E3100B5D667 /* AppDelegate.m in Sources */,
 				B643392219B53B6900D092E4 /* CommunityParsor.m in Sources */,
 				B643392519B5491C00D092E4 /* ListParsor.m in Sources */,
-				B643392B19B5A45300D092E4 /* ViewController.m in Sources */,
 				B67D526F19A35EAC00B5D667 /* XPathQuery.m in Sources */,
 				B67D526D19A35EAC00B5D667 /* TFHpple.m in Sources */,
 				B643392819B5514E00D092E4 /* ListItem.m in Sources */,

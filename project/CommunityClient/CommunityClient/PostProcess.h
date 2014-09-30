@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface PostProcess : NSObject
-- (id) initWith:(NSDictionary*) boardInfo;
-- (NSMutableDictionary*) postProcessWith:(NSMutableDictionary*) source;
++ (NSMutableDictionary*) postProcessWith:(NSMutableDictionary*) source and:(NSString*)listsUrl;
 
 @end

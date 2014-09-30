@@ -9,5 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface Board : NSObject
-
+{
+    @public
+    NSString * name_ko;
+    NSString * name_en;
+    NSMutableArray * articleCollection;
+}
+- (id) initWithAttribute:(NSDictionary*)config;
+- (void) fetchArticlesAtPage:(int) page;
 @end

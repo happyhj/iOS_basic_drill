@@ -10,10 +10,10 @@
 
 @interface ListParsor : NSObject
 
-- (id) initWithBoardAttribute:(NSDictionary*) boardDict;
+- (id) initWithAttribute:(NSDictionary*) config;
+- (NSArray*) fetchListItemsAtPage:(int)page;
+//- (NSMutableArray *)articleItems;
 
-- (NSMutableArray *)articleItems;
-
-- (void)setArticleItems:(NSMutableArray *)newValue;
+//- (void)setArticleItems:(NSMutableArray *)newValue;
 
 @end

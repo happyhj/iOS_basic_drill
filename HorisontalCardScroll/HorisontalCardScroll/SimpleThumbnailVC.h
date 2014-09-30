@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SimpleThumbnailVC : UIViewController
+@interface SimpleThumbnailVC : UIViewController {
+    
+}
+//@property (nonatomic, retain) UIView *simpleThumbnailView;
+@property (nonatomic, strong) IBOutlet UILabel *subjectTitle;
 
+- (IBAction) touchMeAction;
+- (void) initViewWithAttribute:(NSDictionary*) data;
 @end

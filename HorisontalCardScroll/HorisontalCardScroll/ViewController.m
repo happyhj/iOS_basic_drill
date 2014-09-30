@@ -7,11 +7,14 @@
 //
 
 #import "ViewController.h"
-#define ARC4RANDOM_MAX      0x100000000
+#import "ArticlesView.h"
+#import "BoardsView.h"
+
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapRecognizer;
+@property (weak, nonatomic) IBOutlet ArticlesView * articlesView;
+@property (weak, nonatomic) IBOutlet BoardsView * boardsView;
 
 @end
 
@@ -20,75 +23,77 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     
-    // 스크롤뷰의 Viewport는 스토리보드에서 지정했음.
-    CGRect screenRect = [[UIScreen mainScreen] bounds];
-    CGFloat screenWidth = screenRect.size.width;
-    CGFloat screenHeight = screenRect.size.height;
     
-    float scrollWidth = self.scrollView.bounds.size.width;
-    float scrollHeight = self.scrollView.bounds.size.height;
+    NSArray *data =
+        @[
+          @{
+            @"boardName": @"새로운소식",
+            @"articles":
+                @[
+                    @{
+                        @"title": @"WSJ: 블랙베리 패스포트 리뷰 (한글번역)"
+                    },
+                    @{
+                        @"title": @"CloudFare, 200만 사이트들에게 무료로 SSL 지원 추가"
+                    },
+                    @{
+                        @"title": @"GoPro, Hero4 라인업 출시"
+                    },
+                    @{
+                        @"title": @"애플과 콜레트, 9월 30일 체험관 티저"
+                    },
+                    @{
+                        @"title": @"삼성, 기어 S의 2.4\" 버전 테스트 중"
+                    },
+                    @{
+                        @"title": @"LG전자, 프리미엄폰 전략 재설정…삼성과 정면승부"
+                    },
+                    @{
+                        @"title": @"팬택 \"日 M2M 10社 협상 마무리…연 수십만대 공급\""
+                    }
+                ]
+            },
+          @{
+              @"boardName": @"모두의공원",
+              @"articles":
+                  @[
+                      @{
+                          @"title": @"gsmarena.. 아이폰6 배터리..jpg"
+                          },
+                      @{
+                          @"title": @"박정희와 김일성"
+                          },
+                      @{
+                          @"title": @"네이버뮤직 UR BEATS는 잘 안팔리네요 ㅎ"
+                          },
+                      @{
+                          @"title": @"여자친구가 연락이 없어요.."
+                          },
+                      @{
+                          @"title": @"군대갈때 집에 아무 이야기 안하고 가신분 있으신가요"
+                          },
+                      @{
+                          @"title": @"아질게성 글을 쓰고있는 당신에게."
+                          },
+                      @{
+                          @"title": @"회사 이름짓기 귀찮음류.jpg"
+                          }
+                      ]
+              }
+          ];
+//    [_articlesView renderViewWithBoard:board];
+   
+    [_articlesView setModelReference:data];
+  [_articlesView renderArticlesInBoardAtIndex:0];
 
-     CGRect frameRect = _scrollView.frame;
-//     frameRect.origin.y = screenHeight - scrollHeight;
-    frameRect.origin.y = 100;
-
-    _scrollView.frame = frameRect;
-
-     
-    int defaultNumOfCards = 10;
-    float cardWidth = 160.0;
-//    [scrollView setFrame:CGRectMake(0,200, screenWidth, cardHeight)];
-    
-
-
-    // 스크롤뷰 내부 컨텐츠부분의 크기를 설정.
-    //
-    // todo: 가변적으로 될 수 있게 만들어야 함
-    [self.scrollView setContentSize:CGSizeMake(cardWidth * defaultNumOfCards, scrollHeight)];
-    
-    // 이제 카드 subView 를 추가한다.
-    for(int i=0;i<defaultNumOfCards;i++){
-        UIView *cardView = [[UIView alloc]init];
-        CGRect cardViewFrame = CGRectMake(i*cardWidth,0, cardWidth , scrollHeight);
-        [cardView setFrame:cardViewFrame];
-        [cardView setBackgroundColor:[self getRandomColor]];
-        [self.scrollView addSubview:cardView];
-    }
-
+  //  [_boardsView stuffSubviewsWithAttributes:data];
 }
-- (IBAction)zoomScroll:(id)sender {
-    UIScrollView * scroll = (UIScrollView *)[sender view];
-//    NSLog(@"%@",scroll);
-    [UIView animateWithDuration:0.3
-                     animations:^{
-                         CGRect screenRect = [[UIScreen mainScreen] bounds];
-                         CGFloat screenWidth = screenRect.size.width;
-                         CGFloat screenHeight = screenRect.size.height;
-                         
-                         //UIScrollView *scroll = (UIScrollView *)sender;
-                         // 스크롤의 뷰 포트를 화면 크기로 키우고.
-                         float statusHeight = 20;
-                         float cardHeight = screenHeight-statusHeight;
-                         
-                         [scroll setFrame:CGRectMake(0,statusHeight, screenWidth, cardHeight)];
-                         // 각 카드의 크기도 화면 크기로 키우고.
-                         NSArray* subViews = [scroll subviews];
-                         for(int i=0,cardNum=[subViews count];i<cardNum;i++){
-                             UIView * subView = [subViews objectAtIndex:i];
-                              CGRect newCardViewFrame = CGRectMake(i*screenWidth,0, screenWidth , cardHeight);
-                              [subView setFrame:newCardViewFrame];
-                         }
-                         // 스크롤의 콘텐츠 크기를 카드의 합으로 키우고
-                         [scroll setContentSize:CGSizeMake(screenWidth * [subViews count], cardHeight)];
-                        
-                         // Pagenation yes로 바꾼다.
-                         [scroll setPagingEnabled:YES];
-                     }
-                     completion:^(BOOL finished){
-                         
-                     }];
+
+- (IBAction)toggleArticleView:(id)sender {
+    UIScrollView * scroll = (ArticlesView *)[sender view];
+    CGPoint tapPoint = [sender locationInView:scroll];
+    [_articlesView toggleViewWithTapPositionX:tapPoint.x];
 }
 
 - (void)didReceiveMemoryWarning
@@ -97,12 +102,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UIColor*) getRandomColor {
-    return [UIColor colorWithRed:[self getRandomDouble] green:[self getRandomDouble] blue:[self getRandomDouble] alpha:[self getRandomDouble]];
-}
 
-- (double) getRandomDouble {
-    return (double)arc4random()/ARC4RANDOM_MAX;
-}
 
 @end

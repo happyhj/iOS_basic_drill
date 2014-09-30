@@ -10,4 +10,10 @@
 
 @interface ArticlesView : UIScrollView
 
+- (void) setModelReference:(NSArray*) modelRef;
+- (void) renderArticlesInBoardAtIndex:(int) boardIndex;
+
+//- (void) stuffSubviewsWithAttributes:(NSArray*)data;
+- (void) toggleViewWithTapPositionX:(float)positionX;
+
 @end

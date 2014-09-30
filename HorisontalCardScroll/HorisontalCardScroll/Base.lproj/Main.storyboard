@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -16,25 +16,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E4V-sT-X2Z">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Msh-lR-pT9" customClass="BoardsView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="0.67000000000000004" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E4V-sT-X2Z" customClass="ArticlesView">
+                                <rect key="frame" x="0.0" y="308" width="320" height="260"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="vcM-U6-ddE"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="9Lz-je-X8b" appends="YES" id="b07-wT-UfK"/>
                                 </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Msh-lR-pT9" secondAttribute="centerY" id="B7y-OG-bIx"/>
+                            <constraint firstItem="E4V-sT-X2Z" firstAttribute="leading" secondItem="2fi-mo-0CV" secondAttribute="leading" id="C6g-hn-1g8"/>
+                            <constraint firstAttribute="centerX" secondItem="Msh-lR-pT9" secondAttribute="centerX" id="Sof-Od-RGg"/>
+                            <constraint firstItem="E4V-sT-X2Z" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="UBX-eV-FXF"/>
+                            <constraint firstItem="Msh-lR-pT9" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="cLf-34-DuS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Msh-lR-pT9" secondAttribute="bottom" id="dL0-ZV-HlS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="E4V-sT-X2Z" secondAttribute="bottom" id="yOl-Yp-Z5z"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="scrollView" destination="E4V-sT-X2Z" id="y2H-r0-7WQ"/>
+                        <outlet property="articlesView" destination="E4V-sT-X2Z" id="0Dk-dk-2y6"/>
+                        <outlet property="boardsView" destination="Msh-lR-pT9" id="e0V-hu-Vho"/>
                         <outlet property="tapRecognizer" destination="9Lz-je-X8b" id="PDQ-Dz-8lb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="9Lz-je-X8b">
                     <connections>
-                        <action selector="zoomScroll:" destination="vXZ-lx-hvc" id="bM2-iS-sVN"/>
+                        <action selector="toggleArticleView:" destination="vXZ-lx-hvc" id="nBt-Q4-BLp"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Community.h"
+#import "Board.h"
 @interface Communities : NSObject
+
+- (void) prepareForEveryFirstPageArticles;
+- (Community*) communityAtIndex:(int) index;
 
 @end

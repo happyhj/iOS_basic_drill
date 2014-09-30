@@ -79,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
             endingLineNumber = "76"
-            landmarkName = "-drawArcFromData:withStartAngle:withColor:"
+            landmarkName = "-getPieUIColorAtIndex:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

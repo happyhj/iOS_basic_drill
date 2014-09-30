@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 ___NHNNEXT___. All rights reserved.
 //
 #import "TFHpple.h"
-#import "Tutorial.h"
-#import "CommunityParsor.h"
 #import "ListParsor.h"
 
 @implementation CommunityParsor

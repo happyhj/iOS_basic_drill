@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface ArticleParsor : NSObject
-- (id) initWith:(NSDictionary*) boardDict;
+- (id) initWithAttribute:(NSDictionary*) config;
 - (NSDictionary*) getAtricleItemWith:(NSDictionary *) listItem;
 @end

@@ -49,7 +49,10 @@ NSDictionary *DictionaryForNode(xmlNodePtr currentNode, NSMutableDictionary *par
 
         }
       else {
-          [resultForNode setObject:currentNodeContent forKey:@"nodeContent"];          
+          if (currentNodeContent != nil)
+          {
+              [resultForNode setObject:currentNodeContent forKey:@"nodeContent"];
+          }
       }
 
 
@@ -154,7 +157,7 @@ NSArray *PerformXPathQuery(xmlDocPtr doc, NSString *query)
   xmlNodeSetPtr nodes = xpathObj->nodesetval;
   if (!nodes)
     {
-      NSLog(@"Nodes was nil.");
+ //     NSLog(@"Nodes was nil.");
       xmlXPathFreeObject(xpathObj);
       xmlXPathFreeContext(xpathCtx);
       return nil;

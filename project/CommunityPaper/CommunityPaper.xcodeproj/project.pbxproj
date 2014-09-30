@@ -14,6 +14,14 @@
 		B62F0BFC19D69ACA00F9319A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B62F0BFB19D69ACA00F9319A /* Images.xcassets */; };
 		B62F0BFF19D69ACA00F9319A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B62F0BFD19D69ACA00F9319A /* LaunchScreen.xib */; };
 		B62F0C0B19D69ACA00F9319A /* CommunityPaperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F0C0A19D69ACA00F9319A /* CommunityPaperTests.m */; };
+		B62F0C1B19D69B1800F9319A /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F0C1619D69B1800F9319A /* TFHpple.m */; };
+		B62F0C1C19D69B1800F9319A /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F0C1819D69B1800F9319A /* TFHppleElement.m */; };
+		B62F0C1D19D69B1800F9319A /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F0C1A19D69B1800F9319A /* XPathQuery.m */; };
+		B62F0C1F19D69BAA00F9319A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B62F0C1E19D69BAA00F9319A /* libxml2.dylib */; };
+		B62F0C2619D69BEA00F9319A /* CommunityParsor.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F0C2119D69BEA00F9319A /* CommunityParsor.m */; };
+		B62F0C2719D69BEA00F9319A /* ListParsor.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F0C2319D69BEA00F9319A /* ListParsor.m */; };
+		B62F0C2819D69BEA00F9319A /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F0C2519D69BEA00F9319A /* ListItem.m */; };
+		B62F0C2B19D69C1D00F9319A /* community.json in Resources */ = {isa = PBXBuildFile; fileRef = B62F0C2A19D69C1D00F9319A /* community.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,20 @@
 		B62F0C0419D69ACA00F9319A /* CommunityPaperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommunityPaperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62F0C0919D69ACA00F9319A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B62F0C0A19D69ACA00F9319A /* CommunityPaperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommunityPaperTests.m; sourceTree = "<group>"; };
+		B62F0C1519D69B1800F9319A /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		B62F0C1619D69B1800F9319A /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		B62F0C1719D69B1800F9319A /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		B62F0C1819D69B1800F9319A /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		B62F0C1919D69B1800F9319A /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		B62F0C1A19D69B1800F9319A /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		B62F0C1E19D69BAA00F9319A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		B62F0C2019D69BEA00F9319A /* CommunityParsor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityParsor.h; sourceTree = "<group>"; };
+		B62F0C2119D69BEA00F9319A /* CommunityParsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityParsor.m; sourceTree = "<group>"; };
+		B62F0C2219D69BEA00F9319A /* ListParsor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListParsor.h; sourceTree = "<group>"; };
+		B62F0C2319D69BEA00F9319A /* ListParsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListParsor.m; sourceTree = "<group>"; };
+		B62F0C2419D69BEA00F9319A /* ListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
+		B62F0C2519D69BEA00F9319A /* ListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
+		B62F0C2A19D69C1D00F9319A /* community.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = community.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62F0C1F19D69BAA00F9319A /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 		B62F0BE219D69ACA00F9319A = {
 			isa = PBXGroup;
 			children = (
+				B62F0C1E19D69BAA00F9319A /* libxml2.dylib */,
 				B62F0BED19D69ACA00F9319A /* CommunityPaper */,
 				B62F0C0719D69ACA00F9319A /* CommunityPaperTests */,
 				B62F0BEC19D69ACA00F9319A /* Products */,
@@ -81,6 +105,9 @@
 		B62F0BED19D69ACA00F9319A /* CommunityPaper */ = {
 			isa = PBXGroup;
 			children = (
+				B62F0C2A19D69C1D00F9319A /* community.json */,
+				B62F0C2919D69BF200F9319A /* CommunityModel */,
+				B62F0C1419D69B0500F9319A /* happle */,
 				B62F0BF219D69ACA00F9319A /* AppDelegate.h */,
 				B62F0BF319D69ACA00F9319A /* AppDelegate.m */,
 				B62F0BF519D69ACA00F9319A /* ViewController.h */,
@@ -117,6 +144,32 @@
 				B62F0C0919D69ACA00F9319A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B62F0C1419D69B0500F9319A /* happle */ = {
+			isa = PBXGroup;
+			children = (
+				B62F0C1519D69B1800F9319A /* TFHpple.h */,
+				B62F0C1619D69B1800F9319A /* TFHpple.m */,
+				B62F0C1719D69B1800F9319A /* TFHppleElement.h */,
+				B62F0C1819D69B1800F9319A /* TFHppleElement.m */,
+				B62F0C1919D69B1800F9319A /* XPathQuery.h */,
+				B62F0C1A19D69B1800F9319A /* XPathQuery.m */,
+			);
+			name = happle;
+			sourceTree = "<group>";
+		};
+		B62F0C2919D69BF200F9319A /* CommunityModel */ = {
+			isa = PBXGroup;
+			children = (
+				B62F0C2019D69BEA00F9319A /* CommunityParsor.h */,
+				B62F0C2119D69BEA00F9319A /* CommunityParsor.m */,
+				B62F0C2219D69BEA00F9319A /* ListParsor.h */,
+				B62F0C2319D69BEA00F9319A /* ListParsor.m */,
+				B62F0C2419D69BEA00F9319A /* ListItem.h */,
+				B62F0C2519D69BEA00F9319A /* ListItem.m */,
+			);
+			name = CommunityModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +255,7 @@
 				B62F0BFA19D69ACA00F9319A /* Main.storyboard in Resources */,
 				B62F0BFF19D69ACA00F9319A /* LaunchScreen.xib in Resources */,
 				B62F0BFC19D69ACA00F9319A /* Images.xcassets in Resources */,
+				B62F0C2B19D69C1D00F9319A /* community.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +275,13 @@
 			files = (
 				B62F0BF719D69ACA00F9319A /* ViewController.m in Sources */,
 				B62F0BF419D69ACA00F9319A /* AppDelegate.m in Sources */,
+				B62F0C2819D69BEA00F9319A /* ListItem.m in Sources */,
+				B62F0C2719D69BEA00F9319A /* ListParsor.m in Sources */,
 				B62F0BF119D69ACA00F9319A /* main.m in Sources */,
+				B62F0C1B19D69B1800F9319A /* TFHpple.m in Sources */,
+				B62F0C1D19D69B1800F9319A /* XPathQuery.m in Sources */,
+				B62F0C1C19D69B1800F9319A /* TFHppleElement.m in Sources */,
+				B62F0C2619D69BEA00F9319A /* CommunityParsor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +357,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -333,6 +398,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;

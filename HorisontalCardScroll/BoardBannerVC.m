@@ -1,45 +1,37 @@
 //
-//  SimpleThumbnailVC.m
+//  BoardBannerVC.m
 //  HorisontalCardScroll
 //
-//  Created by KIM HEE JAE on 9/28/14.
+//  Created by KIM HEE JAE on 9/30/14.
 //  Copyright (c) 2014 ___NHNNEXT___. All rights reserved.
 //
 
-#import "SimpleThumbnailVC.h"
-//#import <QuartzCore/QuartzCore.h>
+#import "BoardBannerVC.h"
 
-@interface SimpleThumbnailVC ()
+@interface BoardBannerVC ()
+
 @end
 
-@implementation SimpleThumbnailVC
+@implementation BoardBannerVC
 {
-    NSString * subjectStr;
+    NSString * boardNameStr;
 }
-- (IBAction) touchMeAction
-{
-    NSLog(@"Touched!");
-    [self.view setBackgroundColor:[UIColor colorWithRed:.9 green:.1 blue:.9 alpha:1]];
-}
-
 - (void) initViewWithAttribute:(NSDictionary*) data {
-    subjectStr = [data objectForKey:@"title"];
-    NSLog(@"%@",[data objectForKey:@"title"]);
+    boardNameStr = [data objectForKey:@"boardName"];
+    NSLog(@"%@",[data objectForKey:@"boardName"]);
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self.subjectTitle setText:subjectStr];
- //   self.view.layer.cornerRadius = 5;
- //   self.view.layer.masksToBounds = YES;
-
+    [self.boardNameLabel setText:boardNameStr];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 /*
 #pragma mark - Navigation
 
