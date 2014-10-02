@@ -9,9 +9,6 @@
 #import "Community.h"
 
 @implementation Community
-{
-    NSMutableArray * boardCollection; // Community 객체의 인스턴스들로 이루어진다.
-}
 - (id) initWithAttribute:(NSDictionary*)config
 {
     if (!(self = [super init]))

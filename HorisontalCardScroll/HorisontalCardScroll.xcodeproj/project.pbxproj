@@ -95,6 +95,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6A9953A19DA55C000A67D1B /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				B6A9953219D9AF4800A67D1B /* BoardBannerVC.h */,
+				B6A9953319D9AF4800A67D1B /* BoardBannerVC.m */,
+				B6A9953419D9AF4800A67D1B /* BoardBannerVC.xib */,
+				B6FBB34719D7E0E600B81BAC /* SimpleThumbnailVC.h */,
+				B6FBB34819D7E0E600B81BAC /* SimpleThumbnailVC.m */,
+				B6FBB34919D7E0E600B81BAC /* SimpleThumbnailVC.xib */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		B6A9953B19DA55EF00A67D1B /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B6FBB33719D716F800B81BAC /* ArticlesView.h */,
+				B6FBB33819D716F800B81BAC /* ArticlesView.m */,
+				B6A9952C19D9A4C700A67D1B /* BoardsView.h */,
+				B6A9952D19D9A4C700A67D1B /* BoardsView.m */,
+			);
+			name = ScrollView;
+			sourceTree = "<group>";
+		};
 		B6F8AE5119B8703D005214DE = {
 			isa = PBXGroup;
 			children = (
@@ -128,23 +152,15 @@
 		B6F8AE6319B8703D005214DE /* HorisontalCardScroll */ = {
 			isa = PBXGroup;
 			children = (
-				B6A9953219D9AF4800A67D1B /* BoardBannerVC.h */,
-				B6A9953319D9AF4800A67D1B /* BoardBannerVC.m */,
-				B6A9953419D9AF4800A67D1B /* BoardBannerVC.xib */,
+				B6A9953B19DA55EF00A67D1B /* ScrollView */,
+				B6A9953A19DA55C000A67D1B /* CustomView */,
 				B6F8AE6C19B8703D005214DE /* AppDelegate.h */,
 				B6F8AE6D19B8703D005214DE /* AppDelegate.m */,
 				B6F8AE6F19B8703D005214DE /* Main.storyboard */,
-				B6FBB33719D716F800B81BAC /* ArticlesView.h */,
-				B6FBB33819D716F800B81BAC /* ArticlesView.m */,
 				B6F8AE7219B8703D005214DE /* ViewController.h */,
 				B6F8AE7319B8703D005214DE /* ViewController.m */,
 				B6F8AE7519B8703D005214DE /* Images.xcassets */,
 				B6F8AE6419B8703D005214DE /* Supporting Files */,
-				B6FBB34719D7E0E600B81BAC /* SimpleThumbnailVC.h */,
-				B6FBB34819D7E0E600B81BAC /* SimpleThumbnailVC.m */,
-				B6FBB34919D7E0E600B81BAC /* SimpleThumbnailVC.xib */,
-				B6A9952C19D9A4C700A67D1B /* BoardsView.h */,
-				B6A9952D19D9A4C700A67D1B /* BoardsView.m */,
 			);
 			path = HorisontalCardScroll;
 			sourceTree = "<group>";

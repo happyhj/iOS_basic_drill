@@ -38,7 +38,7 @@
     TFHpple *listHtmlParser = [TFHpple hppleWithHTMLData:listHtmlData];
     // 3
     NSArray *listNodes = [listHtmlParser searchWithXPathQuery:list_xpath];
-    
+
     // 4
     NSMutableArray *newListItems = [[NSMutableArray alloc] init];
     for (TFHppleElement *element in listNodes) {

@@ -87,7 +87,7 @@
     [_articlesView setModelReference:data];
   [_articlesView renderArticlesInBoardAtIndex:0];
 
-  //  [_boardsView stuffSubviewsWithAttributes:data];
+   [_boardsView stuffSubviewsWithAttributes:data];
 }
 
 - (IBAction)toggleArticleView:(id)sender {

@@ -15,6 +15,7 @@
     NSString * name_en;
     NSString * name_ko;
     NSString * domain;
+    NSMutableArray * boardCollection; // Community 객체의 인스턴스들로 이루어진다.
 }
 - (id) initWithAttribute:(NSDictionary*)config;
 - (Board *) boardAtIndex:(int) index;

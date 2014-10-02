@@ -13,7 +13,6 @@
 		B643394519B5A71C00D092E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B643394319B5A71C00D092E4 /* InfoPlist.strings */; };
 		B643394719B5A71C00D092E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B643394619B5A71C00D092E4 /* main.m */; };
 		B643394B19B5A71C00D092E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B643394A19B5A71C00D092E4 /* AppDelegate.m */; };
-		B643394E19B5A71C00D092E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B643394C19B5A71C00D092E4 /* Main.storyboard */; };
 		B643395119B5A71C00D092E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B643395019B5A71C00D092E4 /* ViewController.m */; };
 		B643395319B5A71C00D092E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B643395219B5A71C00D092E4 /* Images.xcassets */; };
 		B643395A19B5A71C00D092E4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B643395919B5A71C00D092E4 /* XCTest.framework */; };
@@ -31,6 +30,15 @@
 		B643398919B5ACA600D092E4 /* PostProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = B643398819B5ACA600D092E4 /* PostProcess.m */; };
 		B643398C19B5FBA000D092E4 /* ArticleParsor.m in Sources */ = {isa = PBXBuildFile; fileRef = B643398B19B5FBA000D092E4 /* ArticleParsor.m */; };
 		B6A9953919DA3D4F00A67D1B /* OutlinkParsor.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9953819DA3D4F00A67D1B /* OutlinkParsor.m */; };
+		B6A9954419DA65AD00A67D1B /* BoardBannerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9953F19DA65AD00A67D1B /* BoardBannerVC.m */; };
+		B6A9954519DA65AD00A67D1B /* BoardBannerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A9954019DA65AD00A67D1B /* BoardBannerVC.xib */; };
+		B6A9954619DA65AD00A67D1B /* SimpleThumbnailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9954219DA65AD00A67D1B /* SimpleThumbnailVC.m */; };
+		B6A9954719DA65AD00A67D1B /* SimpleThumbnailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A9954319DA65AD00A67D1B /* SimpleThumbnailVC.xib */; };
+		B6A9954C19DA65B300A67D1B /* ArticlesView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9954919DA65B300A67D1B /* ArticlesView.m */; };
+		B6A9954D19DA65B300A67D1B /* BoardsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9954B19DA65B300A67D1B /* BoardsView.m */; };
+		B6A9954F19DA66A600A67D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A9954E19DA66A600A67D1B /* Main.storyboard */; };
+		B6A9955319DA6B6D00A67D1B /* OutlinkThumbnailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A9955119DA6B6D00A67D1B /* OutlinkThumbnailVC.m */; };
+		B6A9955419DA6B6D00A67D1B /* OutlinkThumbnailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A9955219DA6B6D00A67D1B /* OutlinkThumbnailVC.xib */; };
 		B6FBB33019D69ED900B81BAC /* Communities.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB32F19D69ED900B81BAC /* Communities.m */; };
 		B6FBB33319D6A5CE00B81BAC /* Community.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB33219D6A5CE00B81BAC /* Community.m */; };
 		B6FBB33619D6A7D200B81BAC /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FBB33519D6A7D200B81BAC /* Board.m */; };
@@ -57,7 +65,6 @@
 		B643394819B5A71C00D092E4 /* CommunityClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommunityClient-Prefix.pch"; sourceTree = "<group>"; };
 		B643394919B5A71C00D092E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B643394A19B5A71C00D092E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B643394D19B5A71C00D092E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B643394F19B5A71C00D092E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B643395019B5A71C00D092E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B643395219B5A71C00D092E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -84,6 +91,20 @@
 		B643398B19B5FBA000D092E4 /* ArticleParsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleParsor.m; sourceTree = "<group>"; };
 		B6A9953719DA3D4F00A67D1B /* OutlinkParsor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutlinkParsor.h; sourceTree = "<group>"; };
 		B6A9953819DA3D4F00A67D1B /* OutlinkParsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutlinkParsor.m; sourceTree = "<group>"; };
+		B6A9953E19DA65AD00A67D1B /* BoardBannerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardBannerVC.h; sourceTree = "<group>"; };
+		B6A9953F19DA65AD00A67D1B /* BoardBannerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardBannerVC.m; sourceTree = "<group>"; };
+		B6A9954019DA65AD00A67D1B /* BoardBannerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoardBannerVC.xib; sourceTree = "<group>"; };
+		B6A9954119DA65AD00A67D1B /* SimpleThumbnailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleThumbnailVC.h; sourceTree = "<group>"; };
+		B6A9954219DA65AD00A67D1B /* SimpleThumbnailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleThumbnailVC.m; sourceTree = "<group>"; };
+		B6A9954319DA65AD00A67D1B /* SimpleThumbnailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleThumbnailVC.xib; sourceTree = "<group>"; };
+		B6A9954819DA65B300A67D1B /* ArticlesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticlesView.h; sourceTree = "<group>"; };
+		B6A9954919DA65B300A67D1B /* ArticlesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticlesView.m; sourceTree = "<group>"; };
+		B6A9954A19DA65B300A67D1B /* BoardsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardsView.h; sourceTree = "<group>"; };
+		B6A9954B19DA65B300A67D1B /* BoardsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardsView.m; sourceTree = "<group>"; };
+		B6A9954E19DA66A600A67D1B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B6A9955019DA6B6D00A67D1B /* OutlinkThumbnailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutlinkThumbnailVC.h; sourceTree = "<group>"; };
+		B6A9955119DA6B6D00A67D1B /* OutlinkThumbnailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OutlinkThumbnailVC.m; sourceTree = "<group>"; };
+		B6A9955219DA6B6D00A67D1B /* OutlinkThumbnailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OutlinkThumbnailVC.xib; sourceTree = "<group>"; };
 		B6FBB32E19D69ED900B81BAC /* Communities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Communities.h; sourceTree = "<group>"; };
 		B6FBB32F19D69ED900B81BAC /* Communities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Communities.m; sourceTree = "<group>"; };
 		B6FBB33119D6A5CE00B81BAC /* Community.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Community.h; sourceTree = "<group>"; };
@@ -151,11 +172,13 @@
 		B643394019B5A71C00D092E4 /* CommunityClient */ = {
 			isa = PBXGroup;
 			children = (
+				B6A9953D19DA659900A67D1B /* ScrollView */,
+				B6A9953C19DA658F00A67D1B /* CustomView */,
 				B643397B19B5A7E800D092E4 /* ParseModule */,
 				B643397819B5A73800D092E4 /* lib */,
 				B643394919B5A71C00D092E4 /* AppDelegate.h */,
 				B643394A19B5A71C00D092E4 /* AppDelegate.m */,
-				B643394C19B5A71C00D092E4 /* Main.storyboard */,
+				B6A9954E19DA66A600A67D1B /* Main.storyboard */,
 				B643394F19B5A71C00D092E4 /* ViewController.h */,
 				B643395019B5A71C00D092E4 /* ViewController.m */,
 				B6FBB32E19D69ED900B81BAC /* Communities.h */,
@@ -228,6 +251,33 @@
 				B643398819B5ACA600D092E4 /* PostProcess.m */,
 			);
 			name = ParseModule;
+			sourceTree = "<group>";
+		};
+		B6A9953C19DA658F00A67D1B /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				B6A9953E19DA65AD00A67D1B /* BoardBannerVC.h */,
+				B6A9953F19DA65AD00A67D1B /* BoardBannerVC.m */,
+				B6A9954019DA65AD00A67D1B /* BoardBannerVC.xib */,
+				B6A9954119DA65AD00A67D1B /* SimpleThumbnailVC.h */,
+				B6A9954219DA65AD00A67D1B /* SimpleThumbnailVC.m */,
+				B6A9954319DA65AD00A67D1B /* SimpleThumbnailVC.xib */,
+				B6A9955019DA6B6D00A67D1B /* OutlinkThumbnailVC.h */,
+				B6A9955119DA6B6D00A67D1B /* OutlinkThumbnailVC.m */,
+				B6A9955219DA6B6D00A67D1B /* OutlinkThumbnailVC.xib */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		B6A9953D19DA659900A67D1B /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				B6A9954819DA65B300A67D1B /* ArticlesView.h */,
+				B6A9954919DA65B300A67D1B /* ArticlesView.m */,
+				B6A9954A19DA65B300A67D1B /* BoardsView.h */,
+				B6A9954B19DA65B300A67D1B /* BoardsView.m */,
+			);
+			name = ScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,9 +356,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A9954519DA65AD00A67D1B /* BoardBannerVC.xib in Resources */,
 				B643395319B5A71C00D092E4 /* Images.xcassets in Resources */,
+				B6A9955419DA6B6D00A67D1B /* OutlinkThumbnailVC.xib in Resources */,
+				B6A9954F19DA66A600A67D1B /* Main.storyboard in Resources */,
 				B643394519B5A71C00D092E4 /* InfoPlist.strings in Resources */,
-				B643394E19B5A71C00D092E4 /* Main.storyboard in Resources */,
+				B6A9954719DA65AD00A67D1B /* SimpleThumbnailVC.xib in Resources */,
 				B643398619B5A85B00D092E4 /* community.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,15 +384,20 @@
 				B6FBB33319D6A5CE00B81BAC /* Community.m in Sources */,
 				B643395119B5A71C00D092E4 /* ViewController.m in Sources */,
 				B643394B19B5A71C00D092E4 /* AppDelegate.m in Sources */,
+				B6A9955319DA6B6D00A67D1B /* OutlinkThumbnailVC.m in Sources */,
 				B643398319B5A81200D092E4 /* ListParsor.m in Sources */,
 				B643398919B5ACA600D092E4 /* PostProcess.m in Sources */,
+				B6A9954D19DA65B300A67D1B /* BoardsView.m in Sources */,
+				B6A9954619DA65AD00A67D1B /* SimpleThumbnailVC.m in Sources */,
 				B6A9953919DA3D4F00A67D1B /* OutlinkParsor.m in Sources */,
 				B643394719B5A71C00D092E4 /* main.m in Sources */,
 				B643397519B5A73500D092E4 /* TFHpple.m in Sources */,
 				B6FBB33019D69ED900B81BAC /* Communities.m in Sources */,
 				B643397719B5A73500D092E4 /* XPathQuery.m in Sources */,
 				B6FBB33619D6A7D200B81BAC /* Board.m in Sources */,
+				B6A9954C19DA65B300A67D1B /* ArticlesView.m in Sources */,
 				B643398C19B5FBA000D092E4 /* ArticleParsor.m in Sources */,
+				B6A9954419DA65AD00A67D1B /* BoardBannerVC.m in Sources */,
 				B643397619B5A73500D092E4 /* TFHppleElement.m in Sources */,
 				B643398219B5A81200D092E4 /* CommunityParsor.m in Sources */,
 			);
@@ -370,14 +428,6 @@
 				B643394419B5A71C00D092E4 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B643394C19B5A71C00D092E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B643394D19B5A71C00D092E4 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		B643396219B5A71D00D092E4 /* InfoPlist.strings */ = {

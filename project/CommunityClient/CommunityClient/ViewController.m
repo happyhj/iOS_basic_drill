@@ -11,8 +11,13 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#import "ArticlesView.h"
+#import "BoardsView.h"
 
+@interface ViewController ()
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapRecognizer;
+@property (weak, nonatomic) IBOutlet ArticlesView * articlesView;
+@property (weak, nonatomic) IBOutlet BoardsView * boardsView;
 @end
 
 @implementation ViewController
@@ -30,11 +35,15 @@
     Board* board = [[communities communityAtIndex:0] boardAtIndex:0];
     //    [_articlesView renderViewWithBoard:board];
     //[_articlesView renderViewWithBoard:board];
-  
+    [_articlesView renderViewWithBoard:board];
     // 첫번째
     return;
 }
-
+- (IBAction)toggleArticleView:(id)sender {
+    UIScrollView * scroll = (ArticlesView *)[sender view];
+    CGPoint tapPoint = [sender locationInView:scroll];
+    [_articlesView toggleViewWithTapPositionX:tapPoint.x];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

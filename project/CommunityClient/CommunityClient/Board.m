@@ -43,6 +43,7 @@
 - (void) fetchArticlesAtPage:(int) page
 {
     NSArray* lists = [listParsor fetchListItemsAtPage:page];
+    
     NSMutableArray* articles = [[NSMutableArray alloc] init];
     for(NSDictionary* listItem in lists) {
         [articles addObject:[articleParsor getAtricleItemWith:listItem]];

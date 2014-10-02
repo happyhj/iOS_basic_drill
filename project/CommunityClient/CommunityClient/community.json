@@ -1,33 +1,33 @@
-[{
-    "community_name_en": "clien",
-    "community_name_ko": "클리앙",
-    "domain": "clien.net",
-    "boards": [{
-       "board_name_ko": "새로운소식",
-       "board_name_en": "News",
-       "article_key": "article_id",
-       "list": {
-           "lists_url": "http://clien.net/cs2/bbs/board.php?bo_table=news&page=<%=page%>",
-           "list": "//tr[@class='mytr']",
-            "list_content": {
-               "article_id": "//td[1]/text()",
-               "article_time": "//td[4]/span/@title",
-               "article_title": "//td[@class='post_subject']/a/text()",
-               "article_url": "//td[@class='post_subject']/a/@href",
-               "author_name": "//td[@class='post_name']/span/text()",
-               "author_image": "//td[@class='post_name']/img/@src",
-               "view_count": "//td[5]/text()",
-               "comment_count": "//td[@class='post_subject']/span/text()"
-            }
-        },
-       "article": {
-           "article": "//div[@class='resContents']",
-           "article_content": {
-               "article_img": "//span[@id='writeContents']//img/@src | //div[@class='attachedImage']/img/@src",
-               "article_outlink": "//span[@id='writeContents']//p/a/@href",
-               "article_text": "//span[@id='writeContents']//text()",
-               "article_youtube": "//span[@id='writeContents']//p/iframe/@src"
-            }
-        }
-    }]
-}]
+ [{
+  "community_name_en": "clien",
+  "community_name_ko": "클리앙",
+  "domain": "clien.net",
+  "boards": [{
+             "board_name_ko": "새로운소식",
+             "board_name_en": "News",
+             "article_key": "article_id",
+             "list": {
+             "lists_url": "http://clien.net/cs2/bbs/board.php?bo_table=news&page=<%=page%>",
+             "list": "//tr[@class='mytr']",
+             "list_content": {
+             "article_id": "//td[1]/text()",
+             "article_time": "//td[4]/span/@title",
+             "article_title": "//td[@class='post_subject']/a/text()",
+             "article_url": "//td[@class='post_subject']/a/@href",
+             "author_name": "//td[@class='post_name']/span/text()",
+             "author_image": "//td[@class='post_name']/img/@src",
+             "view_count": "//td[5]/text()",
+             "comment_count": "//td[@class='post_subject']/span/text()"
+             }
+             },
+             "article": {
+             "article": "//div[@class='resContents']",
+             "article_content": {
+             "article_img": "//span[@id='writeContents']//img/@src | //div[@class='attachedImage']/img/@src",
+             "article_outlink": "//span[@id='writeContents']//p/a/@href",
+             "article_text": "//span[@id='writeContents']//text()",
+             "article_youtube": "//span[@id='writeContents']//p/iframe/@src"
+             }
+             }
+             }]
+  }]
